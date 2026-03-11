@@ -1,0 +1,477 @@
+[
+  {
+    "id": "pasta-carbonara",
+    "title": "Classic Pasta Carbonara",
+    "description": "A traditional Italian pasta dish made with eggs, cheese, pancetta, and black pepper. Creamy and satisfying without using cream.",
+    "images": ["/images/recipes/carbonara-1.jpg", "/images/recipes/carbonara-2.jpg"],
+    "prepTime": 10,
+    "cookTime": 20,
+    "totalTime": 30,
+    "servings": 4,
+    "difficulty": "medium",
+    "ingredients": [
+      { "id": "1", "name": "spaghetti", "quantity": 400, "unit": "g" },
+      { "id": "2", "name": "pancetta", "quantity": 200, "unit": "g", "notes": "diced" },
+      { "id": "3", "name": "eggs", "quantity": 4, "unit": "large" },
+      { "id": "4", "name": "Pecorino Romano cheese", "quantity": 100, "unit": "g", "notes": "grated" },
+      { "id": "5", "name": "black pepper", "quantity": 2, "unit": "tsp", "notes": "freshly ground" },
+      { "id": "6", "name": "salt", "quantity": 1, "unit": "tsp" }
+    ],
+    "instructions": [
+      { "step": 1, "text": "Bring a large pot of salted water to boil. Cook spaghetti according to package directions until al dente.", "timer": 10 },
+      { "step": 2, "text": "While pasta cooks, crisp the pancetta in a large skillet over medium heat until golden, about 5 minutes." },
+      { "step": 3, "text": "In a bowl, whisk together eggs, grated Pecorino Romano, and black pepper." },
+      { "step": 4, "text": "Reserve 1 cup of pasta water, then drain the pasta." },
+      { "step": 5, "text": "Add hot pasta to the skillet with pancetta. Remove from heat." },
+      { "step": 6, "text": "Quickly pour in egg mixture, tossing constantly. Add pasta water as needed to create a creamy sauce." },
+      { "step": 7, "text": "Serve immediately with extra cheese and black pepper." }
+    ],
+    "categories": {
+      "cuisineType": ["italian", "european"],
+      "mealType": ["dinner", "lunch"],
+      "dietaryRestrictions": [],
+      "cookingTime": "quick"
+    },
+    "nutrition": {
+      "calories": 580,
+      "protein": 28,
+      "carbs": 65,
+      "fat": 22,
+      "allergens": ["wheat", "eggs", "dairy"]
+    },
+    "createdAt": "2026-03-10T00:00:00Z",
+    "updatedAt": "2026-03-10T00:00:00Z"
+  },
+  {
+    "id": "breakfast-tacos",
+    "title": "Mexican Breakfast Tacos",
+    "description": "Quick and delicious breakfast tacos loaded with scrambled eggs, cheese, salsa, and avocado. Perfect for busy mornings.",
+    "images": ["/images/recipes/breakfast-tacos-1.jpg"],
+    "prepTime": 5,
+    "cookTime": 10,
+    "totalTime": 15,
+    "servings": 2,
+    "difficulty": "easy",
+    "ingredients": [
+      { "id": "1", "name": "flour tortillas", "quantity": 4, "unit": "small" },
+      { "id": "2", "name": "eggs", "quantity": 4, "unit": "large" },
+      { "id": "3", "name": "cheddar cheese", "quantity": 50, "unit": "g", "notes": "shredded" },
+      { "id": "4", "name": "avocado", "quantity": 1, "unit": "medium", "notes": "sliced" },
+      { "id": "5", "name": "salsa", "quantity": 4, "unit": "tbsp" },
+      { "id": "6", "name": "butter", "quantity": 1, "unit": "tbsp" },
+      { "id": "7", "name": "salt and pepper", "quantity": 1, "unit": "pinch" }
+    ],
+    "instructions": [
+      { "step": 1, "text": "Whisk eggs with salt and pepper in a bowl." },
+      { "step": 2, "text": "Melt butter in a non-stick pan over medium heat." },
+      { "step": 3, "text": "Pour in eggs and scramble gently until just set, about 3-4 minutes.", "timer": 4 },
+      { "step": 4, "text": "Warm tortillas in a dry pan or microwave for 20 seconds." },
+      { "step": 5, "text": "Divide scrambled eggs among tortillas." },
+      { "step": 6, "text": "Top with cheese, avocado slices, and salsa. Fold and serve immediately." }
+    ],
+    "categories": {
+      "cuisineType": ["mexican", "american"],
+      "mealType": ["breakfast"],
+      "dietaryRestrictions": ["vegetarian"],
+      "cookingTime": "quick"
+    },
+    "nutrition": {
+      "calories": 420,
+      "protein": 22,
+      "carbs": 32,
+      "fat": 23,
+      "allergens": ["wheat", "eggs", "dairy"]
+    },
+    "createdAt": "2026-03-10T00:00:00Z",
+    "updatedAt": "2026-03-10T00:00:00Z"
+  },
+  {
+    "id": "pad-thai",
+    "title": "Authentic Pad Thai",
+    "description": "Thailand's most famous street food noodle dish with rice noodles, shrimp, peanuts, and a perfect balance of sweet, sour, and savory flavors.",
+    "images": ["/images/recipes/pad-thai-1.jpg", "/images/recipes/pad-thai-2.jpg"],
+    "prepTime": 20,
+    "cookTime": 15,
+    "totalTime": 35,
+    "servings": 4,
+    "difficulty": "medium",
+    "ingredients": [
+      { "id": "1", "name": "rice noodles", "quantity": 300, "unit": "g", "notes": "dried" },
+      { "id": "2", "name": "shrimp", "quantity": 300, "unit": "g", "notes": "peeled and deveined" },
+      { "id": "3", "name": "eggs", "quantity": 2, "unit": "large" },
+      { "id": "4", "name": "bean sprouts", "quantity": 150, "unit": "g" },
+      { "id": "5", "name": "green onions", "quantity": 4, "unit": "stalks", "notes": "chopped" },
+      { "id": "6", "name": "garlic", "quantity": 3, "unit": "cloves", "notes": "minced" },
+      { "id": "7", "name": "tamarind paste", "quantity": 3, "unit": "tbsp" },
+      { "id": "8", "name": "fish sauce", "quantity": 3, "unit": "tbsp" },
+      { "id": "9", "name": "brown sugar", "quantity": 2, "unit": "tbsp" },
+      { "id": "10", "name": "peanuts", "quantity": 50, "unit": "g", "notes": "crushed" },
+      { "id": "11", "name": "lime", "quantity": 2, "unit": "whole", "notes": "cut into wedges" },
+      { "id": "12", "name": "vegetable oil", "quantity": 3, "unit": "tbsp" }
+    ],
+    "instructions": [
+      { "step": 1, "text": "Soak rice noodles in warm water for 30 minutes, then drain.", "timer": 30 },
+      { "step": 2, "text": "Mix tamarind paste, fish sauce, and brown sugar in a small bowl for the sauce." },
+      { "step": 3, "text": "Heat 2 tbsp oil in a wok over high heat. Add shrimp and cook until pink, about 3 minutes. Remove and set aside." },
+      { "step": 4, "text": "Add remaining oil to wok. Scramble eggs, breaking into small pieces." },
+      { "step": 5, "text": "Add garlic and stir-fry for 30 seconds until fragrant." },
+      { "step": 6, "text": "Add drained noodles and sauce. Toss for 2-3 minutes until noodles are tender." },
+      { "step": 7, "text": "Return shrimp to wok. Add bean sprouts and green onions. Toss for 1 minute." },
+      { "step": 8, "text": "Serve immediately with crushed peanuts and lime wedges." }
+    ],
+    "categories": {
+      "cuisineType": ["thai", "asian"],
+      "mealType": ["dinner", "lunch"],
+      "dietaryRestrictions": [],
+      "cookingTime": "quick"
+    },
+    "nutrition": {
+      "calories": 485,
+      "protein": 26,
+      "carbs": 62,
+      "fat": 14,
+      "allergens": ["shellfish", "eggs", "nuts", "soy"]
+    },
+    "createdAt": "2026-03-10T00:00:00Z",
+    "updatedAt": "2026-03-10T00:00:00Z"
+  },
+  {
+    "id": "fluffy-pancakes",
+    "title": "Fluffy Buttermilk Pancakes",
+    "description": "Light, fluffy, and perfectly golden pancakes that are quick to make. The secret is in the buttermilk and not overmixing the batter.",
+    "images": ["/images/recipes/pancakes-1.jpg"],
+    "prepTime": 5,
+    "cookTime": 15,
+    "totalTime": 20,
+    "servings": 4,
+    "difficulty": "easy",
+    "ingredients": [
+      { "id": "1", "name": "all-purpose flour", "quantity": 200, "unit": "g" },
+      { "id": "2", "name": "sugar", "quantity": 2, "unit": "tbsp" },
+      { "id": "3", "name": "baking powder", "quantity": 2, "unit": "tsp" },
+      { "id": "4", "name": "baking soda", "quantity": 0.5, "unit": "tsp" },
+      { "id": "5", "name": "salt", "quantity": 0.5, "unit": "tsp" },
+      { "id": "6", "name": "buttermilk", "quantity": 300, "unit": "ml" },
+      { "id": "7", "name": "egg", "quantity": 1, "unit": "large" },
+      { "id": "8", "name": "melted butter", "quantity": 3, "unit": "tbsp" },
+      { "id": "9", "name": "vanilla extract", "quantity": 1, "unit": "tsp" }
+    ],
+    "instructions": [
+      { "step": 1, "text": "In a large bowl, whisk together flour, sugar, baking powder, baking soda, and salt." },
+      { "step": 2, "text": "In another bowl, whisk buttermilk, egg, melted butter, and vanilla." },
+      { "step": 3, "text": "Pour wet ingredients into dry ingredients. Mix gently until just combined. Lumps are okay!" },
+      { "step": 4, "text": "Heat a non-stick griddle or pan over medium heat. Lightly grease with butter." },
+      { "step": 5, "text": "Pour 1/4 cup batter for each pancake. Cook until bubbles form on surface, about 2-3 minutes.", "timer": 3 },
+      { "step": 6, "text": "Flip and cook until golden brown, another 2 minutes." },
+      { "step": 7, "text": "Serve hot with maple syrup, butter, and fresh berries." }
+    ],
+    "categories": {
+      "cuisineType": ["american"],
+      "mealType": ["breakfast"],
+      "dietaryRestrictions": ["vegetarian"],
+      "cookingTime": "quick"
+    },
+    "nutrition": {
+      "calories": 320,
+      "protein": 9,
+      "carbs": 48,
+      "fat": 11,
+      "allergens": ["wheat", "eggs", "dairy"]
+    },
+    "createdAt": "2026-03-10T00:00:00Z",
+    "updatedAt": "2026-03-10T00:00:00Z"
+  },
+  {
+    "id": "margherita-pizza",
+    "title": "Margherita Pizza",
+    "description": "Classic Italian pizza with fresh mozzarella, tomatoes, and basil. Simple ingredients that showcase quality and tradition.",
+    "images": ["/images/recipes/margherita-1.jpg", "/images/recipes/margherita-2.jpg"],
+    "prepTime": 90,
+    "cookTime": 12,
+    "totalTime": 102,
+    "servings": 2,
+    "difficulty": "medium",
+    "ingredients": [
+      { "id": "1", "name": "pizza dough", "quantity": 400, "unit": "g", "notes": "store-bought or homemade" },
+      { "id": "2", "name": "crushed tomatoes", "quantity": 200, "unit": "g" },
+      { "id": "3", "name": "fresh mozzarella", "quantity": 200, "unit": "g", "notes": "torn into pieces" },
+      { "id": "4", "name": "fresh basil leaves", "quantity": 15, "unit": "leaves" },
+      { "id": "5", "name": "olive oil", "quantity": 3, "unit": "tbsp" },
+      { "id": "6", "name": "garlic", "quantity": 2, "unit": "cloves", "notes": "minced" },
+      { "id": "7", "name": "salt", "quantity": 1, "unit": "tsp" },
+      { "id": "8", "name": "dried oregano", "quantity": 1, "unit": "tsp" }
+    ],
+    "instructions": [
+      { "step": 1, "text": "If using store-bought dough, let it come to room temperature for 30 minutes.", "timer": 30 },
+      { "step": 2, "text": "Preheat oven to maximum temperature (usually 260°C/500°F) with a pizza stone or baking sheet inside for 30 minutes." },
+      { "step": 3, "text": "Mix crushed tomatoes with garlic, oregano, salt, and 1 tbsp olive oil." },
+      { "step": 4, "text": "Roll out dough into two 10-inch rounds on a floured surface." },
+      { "step": 5, "text": "Transfer dough to parchment paper. Spread tomato sauce, leaving a 1-inch border." },
+      { "step": 6, "text": "Add torn mozzarella pieces evenly over the sauce." },
+      { "step": 7, "text": "Drizzle with remaining olive oil. Transfer to hot stone and bake for 10-12 minutes until crust is golden and cheese is bubbly.", "timer": 12 },
+      { "step": 8, "text": "Remove from oven and immediately top with fresh basil leaves. Slice and serve." }
+    ],
+    "categories": {
+      "cuisineType": ["italian", "european"],
+      "mealType": ["dinner", "lunch"],
+      "dietaryRestrictions": ["vegetarian"],
+      "cookingTime": "medium"
+    },
+    "nutrition": {
+      "calories": 620,
+      "protein": 28,
+      "carbs": 72,
+      "fat": 24,
+      "allergens": ["wheat", "dairy"]
+    },
+    "createdAt": "2026-03-10T00:00:00Z",
+    "updatedAt": "2026-03-10T00:00:00Z"
+  },
+  {
+    "id": "vegetable-stir-fry",
+    "title": "Colorful Vegetable Stir Fry",
+    "description": "A vibrant and healthy vegan stir fry packed with crisp vegetables in a savory sauce. Quick, easy, and customizable.",
+    "images": ["/images/recipes/stir-fry-1.jpg"],
+    "prepTime": 15,
+    "cookTime": 10,
+    "totalTime": 25,
+    "servings": 4,
+    "difficulty": "easy",
+    "ingredients": [
+      { "id": "1", "name": "broccoli florets", "quantity": 200, "unit": "g" },
+      { "id": "2", "name": "bell peppers", "quantity": 2, "unit": "medium", "notes": "sliced, mixed colors" },
+      { "id": "3", "name": "carrots", "quantity": 2, "unit": "medium", "notes": "julienned" },
+      { "id": "4", "name": "snap peas", "quantity": 150, "unit": "g" },
+      { "id": "5", "name": "mushrooms", "quantity": 150, "unit": "g", "notes": "sliced" },
+      { "id": "6", "name": "garlic", "quantity": 4, "unit": "cloves", "notes": "minced" },
+      { "id": "7", "name": "ginger", "quantity": 1, "unit": "tbsp", "notes": "grated" },
+      { "id": "8", "name": "soy sauce", "quantity": 3, "unit": "tbsp" },
+      { "id": "9", "name": "sesame oil", "quantity": 2, "unit": "tsp" },
+      { "id": "10", "name": "cornstarch", "quantity": 1, "unit": "tsp" },
+      { "id": "11", "name": "vegetable oil", "quantity": 2, "unit": "tbsp" },
+      { "id": "12", "name": "sesame seeds", "quantity": 1, "unit": "tbsp", "notes": "for garnish" }
+    ],
+    "instructions": [
+      { "step": 1, "text": "Mix soy sauce, sesame oil, cornstarch, and 2 tbsp water in a small bowl for the sauce." },
+      { "step": 2, "text": "Heat vegetable oil in a large wok or skillet over high heat." },
+      { "step": 3, "text": "Add garlic and ginger, stir-fry for 30 seconds until fragrant." },
+      { "step": 4, "text": "Add broccoli and carrots. Stir-fry for 3 minutes." },
+      { "step": 5, "text": "Add bell peppers, snap peas, and mushrooms. Continue stir-frying for 3-4 minutes until vegetables are crisp-tender." },
+      { "step": 6, "text": "Pour in sauce and toss everything together for 1 minute until vegetables are coated and sauce thickens." },
+      { "step": 7, "text": "Garnish with sesame seeds. Serve immediately over rice or noodles." }
+    ],
+    "categories": {
+      "cuisineType": ["asian", "chinese"],
+      "mealType": ["dinner", "lunch"],
+      "dietaryRestrictions": ["vegan", "vegetarian"],
+      "cookingTime": "quick"
+    },
+    "nutrition": {
+      "calories": 180,
+      "protein": 6,
+      "carbs": 22,
+      "fat": 8,
+      "allergens": ["soy"]
+    },
+    "createdAt": "2026-03-10T00:00:00Z",
+    "updatedAt": "2026-03-10T00:00:00Z"
+  },
+  {
+    "id": "chocolate-chip-cookies",
+    "title": "Perfect Chocolate Chip Cookies",
+    "description": "Crispy edges with chewy centers loaded with chocolate chips. The ultimate classic cookie that never goes out of style.",
+    "images": ["/images/recipes/cookies-1.jpg"],
+    "prepTime": 15,
+    "cookTime": 12,
+    "totalTime": 27,
+    "servings": 24,
+    "difficulty": "easy",
+    "ingredients": [
+      { "id": "1", "name": "all-purpose flour", "quantity": 280, "unit": "g" },
+      { "id": "2", "name": "baking soda", "quantity": 1, "unit": "tsp" },
+      { "id": "3", "name": "salt", "quantity": 1, "unit": "tsp" },
+      { "id": "4", "name": "unsalted butter", "quantity": 225, "unit": "g", "notes": "softened" },
+      { "id": "5", "name": "brown sugar", "quantity": 150, "unit": "g", "notes": "packed" },
+      { "id": "6", "name": "granulated sugar", "quantity": 100, "unit": "g" },
+      { "id": "7", "name": "eggs", "quantity": 2, "unit": "large" },
+      { "id": "8", "name": "vanilla extract", "quantity": 2, "unit": "tsp" },
+      { "id": "9", "name": "chocolate chips", "quantity": 340, "unit": "g" }
+    ],
+    "instructions": [
+      { "step": 1, "text": "Preheat oven to 190°C (375°F). Line baking sheets with parchment paper." },
+      { "step": 2, "text": "Whisk together flour, baking soda, and salt in a bowl." },
+      { "step": 3, "text": "In a large bowl, beat butter and both sugars until light and fluffy, about 3 minutes." },
+      { "step": 4, "text": "Beat in eggs one at a time, then add vanilla extract." },
+      { "step": 5, "text": "Gradually mix in flour mixture until just combined." },
+      { "step": 6, "text": "Fold in chocolate chips." },
+      { "step": 7, "text": "Drop rounded tablespoons of dough onto prepared baking sheets, spacing 2 inches apart." },
+      { "step": 8, "text": "Bake for 10-12 minutes until edges are golden but centers look slightly underdone.", "timer": 12 },
+      { "step": 9, "text": "Let cool on baking sheet for 5 minutes before transferring to a wire rack." }
+    ],
+    "categories": {
+      "cuisineType": ["american"],
+      "mealType": ["dessert", "snack"],
+      "dietaryRestrictions": ["vegetarian"],
+      "cookingTime": "quick"
+    },
+    "nutrition": {
+      "calories": 180,
+      "protein": 2,
+      "carbs": 24,
+      "fat": 9,
+      "allergens": ["wheat", "eggs", "dairy"]
+    },
+    "createdAt": "2026-03-10T00:00:00Z",
+    "updatedAt": "2026-03-10T00:00:00Z"
+  },
+  {
+    "id": "chicken-fajitas",
+    "title": "Sizzling Chicken Fajitas",
+    "description": "Juicy marinated chicken with colorful peppers and onions served with warm tortillas. Perfect for a fun and interactive dinner.",
+    "images": ["/images/recipes/fajitas-1.jpg", "/images/recipes/fajitas-2.jpg"],
+    "prepTime": 15,
+    "cookTime": 15,
+    "totalTime": 30,
+    "servings": 4,
+    "difficulty": "easy",
+    "ingredients": [
+      { "id": "1", "name": "chicken breasts", "quantity": 600, "unit": "g", "notes": "sliced into strips" },
+      { "id": "2", "name": "bell peppers", "quantity": 3, "unit": "large", "notes": "sliced, mixed colors" },
+      { "id": "3", "name": "onion", "quantity": 1, "unit": "large", "notes": "sliced" },
+      { "id": "4", "name": "lime juice", "quantity": 3, "unit": "tbsp" },
+      { "id": "5", "name": "olive oil", "quantity": 3, "unit": "tbsp" },
+      { "id": "6", "name": "chili powder", "quantity": 2, "unit": "tsp" },
+      { "id": "7", "name": "cumin", "quantity": 1, "unit": "tsp" },
+      { "id": "8", "name": "paprika", "quantity": 1, "unit": "tsp" },
+      { "id": "9", "name": "garlic powder", "quantity": 1, "unit": "tsp" },
+      { "id": "10", "name": "salt", "quantity": 1, "unit": "tsp" },
+      { "id": "11", "name": "flour or corn tortillas", "quantity": 8, "unit": "medium" }
+    ],
+    "instructions": [
+      { "step": 1, "text": "In a bowl, mix lime juice, 2 tbsp oil, chili powder, cumin, paprika, garlic powder, and salt." },
+      { "step": 2, "text": "Add chicken strips and marinate for 10 minutes.", "timer": 10 },
+      { "step": 3, "text": "Heat 1 tbsp oil in a large skillet over high heat." },
+      { "step": 4, "text": "Add chicken and cook until browned and cooked through, about 5-6 minutes. Remove and set aside." },
+      { "step": 5, "text": "In the same skillet, add bell peppers and onions. Cook for 4-5 minutes until slightly charred but still crisp." },
+      { "step": 6, "text": "Return chicken to skillet and toss with vegetables for 1 minute." },
+      { "step": 7, "text": "Warm tortillas and serve fajitas with toppings like sour cream, guacamole, and salsa." }
+    ],
+    "categories": {
+      "cuisineType": ["mexican"],
+      "mealType": ["dinner"],
+      "dietaryRestrictions": [],
+      "cookingTime": "quick"
+    },
+    "nutrition": {
+      "calories": 420,
+      "protein": 38,
+      "carbs": 35,
+      "fat": 14,
+      "allergens": ["wheat"]
+    },
+    "createdAt": "2026-03-10T00:00:00Z",
+    "updatedAt": "2026-03-10T00:00:00Z"
+  },
+  {
+    "id": "greek-salad",
+    "title": "Traditional Greek Salad",
+    "description": "Fresh, vibrant Mediterranean salad with tomatoes, cucumbers, olives, and feta cheese. Light, healthy, and bursting with flavor.",
+    "images": ["/images/recipes/greek-salad-1.jpg"],
+    "prepTime": 15,
+    "cookTime": 0,
+    "totalTime": 15,
+    "servings": 4,
+    "difficulty": "easy",
+    "ingredients": [
+      { "id": "1", "name": "tomatoes", "quantity": 4, "unit": "large", "notes": "cut into wedges" },
+      { "id": "2", "name": "cucumber", "quantity": 1, "unit": "large", "notes": "sliced" },
+      { "id": "3", "name": "red onion", "quantity": 1, "unit": "small", "notes": "thinly sliced" },
+      { "id": "4", "name": "Kalamata olives", "quantity": 100, "unit": "g" },
+      { "id": "5", "name": "feta cheese", "quantity": 200, "unit": "g", "notes": "cubed" },
+      { "id": "6", "name": "extra virgin olive oil", "quantity": 4, "unit": "tbsp" },
+      { "id": "7", "name": "red wine vinegar", "quantity": 2, "unit": "tbsp" },
+      { "id": "8", "name": "dried oregano", "quantity": 1, "unit": "tsp" },
+      { "id": "9", "name": "salt and pepper", "quantity": 1, "unit": "pinch" }
+    ],
+    "instructions": [
+      { "step": 1, "text": "In a large bowl, combine tomatoes, cucumber, red onion, and olives." },
+      { "step": 2, "text": "In a small bowl, whisk together olive oil, red wine vinegar, oregano, salt, and pepper." },
+      { "step": 3, "text": "Pour dressing over vegetables and toss gently." },
+      { "step": 4, "text": "Top with feta cheese cubes." },
+      { "step": 5, "text": "Let stand for 5 minutes to allow flavors to meld before serving." }
+    ],
+    "categories": {
+      "cuisineType": ["greek", "mediterranean", "european"],
+      "mealType": ["lunch", "dinner"],
+      "dietaryRestrictions": ["vegetarian"],
+      "cookingTime": "quick"
+    },
+    "nutrition": {
+      "calories": 280,
+      "protein": 8,
+      "carbs": 14,
+      "fat": 22,
+      "allergens": ["dairy"]
+    },
+    "createdAt": "2026-03-10T00:00:00Z",
+    "updatedAt": "2026-03-10T00:00:00Z"
+  },
+  {
+    "id": "beef-pho",
+    "title": "Vietnamese Beef Pho",
+    "description": "Aromatic and deeply flavorful Vietnamese noodle soup with tender beef, fresh herbs, and a rich broth that's been simmered for hours.",
+    "images": ["/images/recipes/pho-1.jpg", "/images/recipes/pho-2.jpg"],
+    "prepTime": 30,
+    "cookTime": 180,
+    "totalTime": 210,
+    "servings": 6,
+    "difficulty": "hard",
+    "ingredients": [
+      { "id": "1", "name": "beef bones", "quantity": 1.5, "unit": "kg", "notes": "knuckle and marrow bones" },
+      { "id": "2", "name": "beef brisket", "quantity": 500, "unit": "g" },
+      { "id": "3", "name": "onions", "quantity": 2, "unit": "large", "notes": "halved" },
+      { "id": "4", "name": "ginger", "quantity": 100, "unit": "g", "notes": "sliced" },
+      { "id": "5", "name": "star anise", "quantity": 4, "unit": "whole" },
+      { "id": "6", "name": "cinnamon stick", "quantity": 1, "unit": "large" },
+      { "id": "7", "name": "coriander seeds", "quantity": 1, "unit": "tbsp" },
+      { "id": "8", "name": "fish sauce", "quantity": 80, "unit": "ml" },
+      { "id": "9", "name": "rock sugar", "quantity": 30, "unit": "g" },
+      { "id": "10", "name": "rice noodles", "quantity": 400, "unit": "g", "notes": "banh pho" },
+      { "id": "11", "name": "beef sirloin", "quantity": 300, "unit": "g", "notes": "thinly sliced for topping" },
+      { "id": "12", "name": "bean sprouts", "quantity": 200, "unit": "g" },
+      { "id": "13", "name": "fresh basil", "quantity": 1, "unit": "bunch" },
+      { "id": "14", "name": "cilantro", "quantity": 1, "unit": "bunch" },
+      { "id": "15", "name": "lime", "quantity": 2, "unit": "whole", "notes": "cut into wedges" },
+      { "id": "16", "name": "hoisin sauce", "quantity": 4, "unit": "tbsp", "notes": "for serving" },
+      { "id": "17", "name": "sriracha", "quantity": 4, "unit": "tbsp", "notes": "for serving" }
+    ],
+    "instructions": [
+      { "step": 1, "text": "Parboil beef bones in boiling water for 5 minutes. Drain and rinse to remove impurities." },
+      { "step": 2, "text": "Char onions and ginger directly over a gas flame or under a broiler until blackened." },
+      { "step": 3, "text": "Toast star anise, cinnamon, and coriander seeds in a dry pan for 2 minutes until fragrant." },
+      { "step": 4, "text": "Place bones, brisket, charred onions, ginger, and toasted spices in a large pot. Cover with 4 liters of water.", "timer": 10 },
+      { "step": 5, "text": "Bring to a boil, then reduce heat and simmer gently for 3 hours, skimming foam regularly.", "timer": 180 },
+      { "step": 6, "text": "Remove brisket after 90 minutes and let cool. Slice thinly when ready to serve." },
+      { "step": 7, "text": "Strain broth through a fine-mesh sieve. Season with fish sauce and rock sugar to taste." },
+      { "step": 8, "text": "Cook rice noodles according to package directions. Divide among bowls." },
+      { "step": 9, "text": "Top noodles with sliced brisket and raw sirloin slices." },
+      { "step": 10, "text": "Ladle hot broth over bowls (the heat will cook the raw beef)." },
+      { "step": 11, "text": "Serve with bean sprouts, fresh herbs, lime wedges, hoisin sauce, and sriracha on the side." }
+    ],
+    "categories": {
+      "cuisineType": ["vietnamese", "asian"],
+      "mealType": ["dinner", "lunch"],
+      "dietaryRestrictions": [],
+      "cookingTime": "long"
+    },
+    "nutrition": {
+      "calories": 520,
+      "protein": 42,
+      "carbs": 58,
+      "fat": 12,
+      "allergens": ["soy"]
+    },
+    "createdAt": "2026-03-10T00:00:00Z",
+    "updatedAt": "2026-03-10T00:00:00Z"
+  }
+]
