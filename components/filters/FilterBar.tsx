@@ -39,6 +39,27 @@ export function FilterBar({ categories, onFilterChange }: FilterBarProps) {
     setFilter('dietaryRestrictions', newValues);
   };
 
+  const toggleCookingTime = (id: string) => {
+    // Cooking time is single-select (radio button behavior)
+    // If already selected, deselect it; otherwise select the new one
+    const newValue = filters.cookingTime === id ? undefined : id;
+    setFilter('cookingTime', newValue ? [newValue] : []);
+  };
+
+  const toggleDifficulty = (id: string) => {
+    const currentDifficulty = filters.difficulty || [];
+    const newValues = currentDifficulty.includes(id)
+      ? currentDifficulty.filter((d) => d !== id)
+      : [...currentDifficulty, id];
+    setFilter('difficulty', newValues);
+  };
+
+  const difficultyLevels = [
+    { id: 'easy', label: 'Easy' },
+    { id: 'medium', label: 'Medium' },
+    { id: 'hard', label: 'Hard' },
+  ];
+
   return (
     <div className="space-y-6 rounded-lg border border-gray-200 bg-white p-6 dark:border-gray-700 dark:bg-gray-800">
       {/* Header */}
@@ -95,6 +116,40 @@ export function FilterBar({ categories, onFilterChange }: FilterBarProps) {
               label={dietary.label}
               active={filters.dietaryRestrictions.includes(dietary.id)}
               onClick={() => toggleDietary(dietary.id)}
+            />
+          ))}
+        </div>
+      </div>
+
+      {/* Cooking Time */}
+      <div>
+        <h4 className="mb-3 text-sm font-medium text-gray-700 dark:text-gray-300">
+          Cooking Time
+        </h4>
+        <div className="flex flex-wrap gap-2">
+          {categories.cookingTimes.map((time) => (
+            <FilterChip
+              key={time.id}
+              label={time.label}
+              active={filters.cookingTime === time.id}
+              onClick={() => toggleCookingTime(time.id)}
+            />
+          ))}
+        </div>
+      </div>
+
+      {/* Difficulty Level */}
+      <div>
+        <h4 className="mb-3 text-sm font-medium text-gray-700 dark:text-gray-300">
+          Difficulty Level
+        </h4>
+        <div className="flex flex-wrap gap-2">
+          {difficultyLevels.map((level) => (
+            <FilterChip
+              key={level.id}
+              label={level.label}
+              active={filters.difficulty?.includes(level.id) || false}
+              onClick={() => toggleDifficulty(level.id)}
             />
           ))}
         </div>

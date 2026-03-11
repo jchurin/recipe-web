@@ -69,7 +69,8 @@ export function useFilters(): UseFiltersReturn {
     (category: FilterCategory, values: string[]) => {
       const newFilters = {
         ...filters,
-        [category]: values,
+        // cookingTime is a single value, not an array
+        [category]: category === 'cookingTime' ? (values.length > 0 ? values[0] : undefined) : values,
       };
 
       const queryString = filtersToURLParams(newFilters);
