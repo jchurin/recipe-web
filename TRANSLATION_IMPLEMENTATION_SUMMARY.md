@@ -72,9 +72,10 @@ The recipe website now supports **4 languages** with complete translations:
 14. `data/categories/pt.json` - Category labels in Portuguese
 15. `data/categories/it.json` - Category labels in Italian
 
-#### Components (2 files)
+#### Components (3 files)
 16. `components/layout/LanguageSwitcher.tsx` - Language selector dropdown
 17. `components/recipe/RecipesBrowser.tsx` - Client-side filtering component
+18. `components/recipe/CategoryBadges.tsx` - Dynamic category label translation component
 
 ### Modified Files (12)
 
@@ -98,6 +99,14 @@ The recipe website now supports **4 languages** with complete translations:
 11. `components/layout/Footer.tsx` - Added translations
 12. `components/filters/FilterBar.tsx` - Added translations for filter labels
 13. `components/recipe/RecipesBrowser.tsx` - Added translations for recipe count
+14. `components/recipe/RecipeIngredients.tsx` - Converted to client component, added unit translations
+15. `components/recipe/RecipeInstructions.tsx` - Converted to client component, added title translation
+16. `components/recipe/CategoryBadges.tsx` - Created for dynamic category translation
+17. `components/recipe/RecipeCard.tsx` - Added category label translation
+18. `components/recipe/RecipeMeta.tsx` - Converted to client component, added translations
+19. `components/recipe/RecipeNutrition.tsx` - Converted to client component, added allergen translations
+20. `components/recipe/RecipeShare.tsx` - Added button label translations
+21. `components/favorites/FavoriteButton.tsx` - Added save/saved translations
 
 ---
 
@@ -309,6 +318,10 @@ Each language has ~100 UI strings organized by namespace:
 - ✅ **All components translated**: Header, Footer, FilterBar, RecipeCard, etc.
 - ✅ **Metadata translated** (page titles, descriptions)
 - ✅ **No linting errors**
+- ✅ **Measurement unit translations** (tsp, tbsp, cup, etc.)
+- ✅ **Recipe data standardized** (no English-only units in Spanish recipes)
+- ✅ **Component titles translated** (Ingredients, Instructions)
+- ✅ **Type-safe translations** (no `any` types)
 
 ---
 
@@ -358,6 +371,49 @@ If you want to add French (fr) in the future:
 
 ---
 
+## 🔧 Recent Improvements (Latest Update)
+
+### Component Translation Enhancements
+1. **RecipeIngredients.tsx**:
+   - Converted to client component with useTranslations hook
+   - Added "Ingredients" title translation
+   - Implemented unit translation function (tsp → cdta, tbsp → cda, etc.)
+
+2. **RecipeInstructions.tsx**:
+   - Converted to client component
+   - Added "Instructions" title translation
+
+3. **CategoryBadges.tsx**:
+   - Created new component for dynamic category label translation
+   - Loads categories based on locale
+   - Properly typed with Categories interface
+
+### Recipe Data Standardization
+Fixed all Spanish recipes to remove English-only terms:
+- Changed `"unit": "large"` → `"unit": "pieces"` with size in name or notes
+- Changed `"unit": "medium"` → `"unit": "piece"` with descriptor
+- Changed `"unit": "small"` → `"unit": "pieces"` with descriptor
+- Changed `"unit": "stalks"` → `"unit": "pieces"`
+- Changed `"unit": "whole"` → `"unit": "pieces"`
+- Changed `"unit": "leaves"` → `"unit": "pieces"`
+- Changed `"unit": "bunch"` → `"unit": "piece"` with note "manojo"
+
+**Example fix:**
+```json
+// Before
+{ "name": "huevos", "quantity": 4, "unit": "large" }
+{ "name": "cebollas", "quantity": 2, "unit": "large" }
+
+// After
+{ "name": "huevos", "quantity": 4, "unit": "pieces" }
+{ "name": "cebollas grandes", "quantity": 2, "unit": "pieces" }
+```
+
+### TypeScript Improvements
+- Replaced all `any` types with proper `Categories` type from `types/category.ts`
+- Fixed all ESLint errors
+- Improved type safety across all translation-related components
+
 ## 🐛 Known Limitations
 
 1. **Translation Quality**: AI-generated translations should be reviewed by native speakers for production use
@@ -365,6 +421,7 @@ If you want to add French (fr) in the future:
 3. **Locale Detection**: Currently URL-based only (no browser language auto-detection)
 4. **Missing Pluralization**: Some text doesn't handle plural forms perfectly
 5. **Date/Number Formatting**: Uses English formats for all languages (could be localized further)
+6. **Portuguese and Italian Recipe Data**: Need to apply same standardization fixes as Spanish
 
 ---
 

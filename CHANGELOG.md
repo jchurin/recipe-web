@@ -2,7 +2,66 @@
 
 All notable changes to this project will be documented in this file.
 
-## [Unreleased] - 2026-03-11
+## [Unreleased] - 2026-03-12
+
+### Added
+
+#### Internationalization (i18n)
+- **Multi-Language Support**: Fully functional 4-language system
+  - 🇬🇧 English (en) - Default
+  - 🇪🇸 Spanish (es)
+  - 🇵🇹 Portuguese (pt)
+  - 🇮🇹 Italian (it)
+- **next-intl Integration**: v4.8.3 for Next.js 16 App Router
+- **Locale-Based Routing**: SEO-friendly URLs (`/en/recipes`, `/es/recipes`)
+- **Language Switcher**: Dropdown component in header with flags and language names
+- **Message Files**: ~100 UI strings translated for each language
+- **Recipe Data Translation**: All 10 recipes translated to all 4 languages (40 total translations)
+- **Category Translation**: All category labels translated with language-agnostic IDs
+- **Unit Translation**: Measurement units translated (tsp→cdta, tbsp→cda, etc.)
+- **Middleware**: Automatic locale detection and routing
+- **Standardized Recipe Data**: Removed English-only units, standardized to universal units (pieces, g, ml, etc.)
+
+#### Components
+- `LanguageSwitcher`: Language selector dropdown with flag emojis
+- `CategoryBadges`: Dynamic category label translation component
+- Converted to client components with translations:
+  - `RecipeIngredients`: Added title and unit translations
+  - `RecipeInstructions`: Added title translation
+  - `RecipeMeta`: Added metadata translations
+  - `RecipeNutrition`: Added nutrition and allergen translations
+  - `RecipeCard`: Added category label translations
+  - `RecipeShare`: Added button label translations
+  - `FavoriteButton`: Added save/saved translations
+
+#### Configuration
+- `lib/i18n/config.ts`: Locale configuration and language metadata
+- `lib/i18n/request.ts`: Server-side i18n setup
+- `lib/i18n/routing.ts`: Routing configuration
+- `middleware.ts`: Locale detection and URL rewriting
+
+### Changed
+- **App Structure**: Moved all routes under `app/[locale]/` for internationalization
+- **Data Layer**: Updated all data access functions to accept `locale` parameter
+- **Recipe Data Structure**: Split `data/recipes.json` into language-specific files
+- **Category Data Structure**: Split `data/categories.json` into language-specific files
+- **Components**: Updated all components to use `useTranslations()` hook
+- **Links**: All internal links now include locale prefix
+- **Type Safety**: Replaced all `any` types with proper `Categories` type
+
+### Fixed
+- Removed English-only units from Spanish recipes ("large", "medium", "small", "stalks", "whole", "leaves", "bunch")
+- Fixed missing translations for:
+  - Ingredients and Instructions titles
+  - Difficulty levels in filters
+  - Category badges showing IDs instead of labels
+  - Recipe count text
+  - Measurement units
+- Fixed TypeScript linting errors (replaced `any` with proper types)
+
+---
+
+## [Initial Release] - 2026-03-11
 
 ### Added
 

@@ -4,6 +4,7 @@ A modern, responsive recipe website built with Next.js 16, featuring real-time s
 
 ## ✨ Features
 
+- 🌍 **Multi-Language Support** - Full i18n with English, Spanish, Portuguese, and Italian
 - 🔍 **Real-time Fuzzy Search** - Search recipes by name, ingredients, cuisine, or categories
 - 🎛️ **Advanced Filtering** - Filter by cuisine type, meal type, dietary restrictions, and cooking time
 - ❤️ **Favorites System** - Save your favorite recipes with localStorage persistence
@@ -48,11 +49,12 @@ Navigate to [http://localhost:3000](http://localhost:3000)
 ```
 recipe-web/
 ├── app/                      # Next.js App Router
-│   ├── page.tsx             # Home page with search
-│   ├── recipes/             # Recipe pages
-│   │   ├── page.tsx        # Browse recipes
-│   │   └── [id]/page.tsx   # Recipe detail
-│   └── favorites/page.tsx   # Favorites page
+│   └── [locale]/            # Locale-based routing
+│       ├── page.tsx         # Home page with search
+│       ├── recipes/         # Recipe pages
+│       │   ├── page.tsx    # Browse recipes
+│       │   └── [id]/page.tsx # Recipe detail
+│       └── favorites/page.tsx # Favorites page
 │
 ├── components/              # React components
 │   ├── common/             # Atomic components (Button, Badge, etc.)
@@ -60,18 +62,29 @@ recipe-web/
 │   ├── search/             # Search components
 │   ├── filters/            # Filter components
 │   ├── favorites/          # Favorites components
-│   └── layout/             # Layout components
+│   └── layout/             # Layout components (Header, Footer, LanguageSwitcher)
 │
 ├── lib/                     # Utilities and hooks
 │   ├── hooks/              # Custom React hooks
 │   ├── utils/              # Utility functions
-│   └── data/               # Data access layer
+│   ├── data/               # Data access layer
+│   └── i18n/               # Internationalization config
 │
+├── messages/                # UI translations (en, es, pt, it)
 ├── types/                   # TypeScript type definitions
 ├── data/                    # JSON data files
-│   ├── recipes.json        # Recipe data
-│   └── categories.json     # Category definitions
+│   ├── recipes/            # Recipe data by language
+│   │   ├── en.json
+│   │   ├── es.json
+│   │   ├── pt.json
+│   │   └── it.json
+│   └── categories/         # Category definitions by language
+│       ├── en.json
+│       ├── es.json
+│       ├── pt.json
+│       └── it.json
 │
+├── middleware.ts            # Locale detection & routing
 └── public/                  # Static assets
     └── images/recipes/     # Recipe images
 ```
@@ -82,6 +95,7 @@ recipe-web/
 - **UI Library:** React 19.2.3
 - **Language:** TypeScript 5
 - **Styling:** Tailwind CSS 4
+- **Internationalization:** next-intl v4.8.3
 - **Search:** Fuse.js (fuzzy search)
 - **Animations:** Framer Motion
 - **State:** React Hooks + localStorage
@@ -106,9 +120,25 @@ recipe-web/
 - Primary: Geist Sans
 - Monospace: Geist Mono
 
+## 🌍 Multi-Language Support
+
+The website supports **4 languages** with complete translations:
+- 🇬🇧 English (en) - Default
+- 🇪🇸 Spanish (es)
+- 🇵🇹 Portuguese (pt)
+- 🇮🇹 Italian (it)
+
+**Features:**
+- SEO-friendly URLs (`/en/recipes`, `/es/recipes`)
+- Language switcher in header
+- All UI elements translated
+- Recipe content translated (titles, descriptions, ingredients, instructions)
+- Filters work across all languages
+- Measurement units translated (tsp, tbsp, etc.)
+
 ## 🗂️ Adding New Recipes
 
-1. **Add recipe data** to `data/recipes.json`:
+1. **Add recipe data** to all language files (`data/recipes/*.json`):
 
 ```json
 {
@@ -172,10 +202,12 @@ recipe-web/
 
 | Route | Description | Rendering |
 |-------|-------------|-----------|
-| `/` | Home with search | CSR |
-| `/recipes` | Browse all recipes | SSR |
-| `/recipes/[id]` | Recipe detail | SSR |
-| `/favorites` | Saved recipes | CSR |
+| `/[locale]` | Home with search | CSR |
+| `/[locale]/recipes` | Browse all recipes | SSR |
+| `/[locale]/recipes/[id]` | Recipe detail | SSR |
+| `/[locale]/favorites` | Saved recipes | CSR |
+
+**Supported Locales:** en (English), es (Spanish), pt (Portuguese), it (Italian)
 
 ## 📊 Data Structure
 

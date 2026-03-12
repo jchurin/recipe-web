@@ -8,11 +8,13 @@ This is a Next.js 16.1.6 web application for recipes, built with:
 - React 19.2.3
 - TypeScript 5
 - Tailwind CSS 4
+- next-intl v4.8.3 (internationalization)
 - App Router architecture (Next.js app directory)
 
 **Project Goals**:
 - Frontend-only recipe website (no database)
 - JSON files in `/data` folder serve as source of truth
+- Multi-language support (English, Spanish, Portuguese, Italian)
 - Clean, modern UI with smooth transitions
 - Highly componentized architecture
 - Can use Next.js API routes if beneficial
@@ -52,25 +54,32 @@ npm run lint
 ```
 recipe-web/
 ├── app/                      # Next.js App Router
-│   ├── layout.tsx           # Root layout with Header/Footer
-│   ├── page.tsx             # Home (CSR - search focused)
-│   ├── recipes/
-│   │   ├── page.tsx        # Browse (SSR)
-│   │   └── [id]/page.tsx   # Detail (SSR)
-│   └── favorites/page.tsx   # Favorites (CSR)
+│   ├── layout.tsx           # Root layout
+│   └── [locale]/            # Locale-based routing
+│       ├── layout.tsx       # Locale layout with translations
+│       ├── page.tsx         # Home (CSR - search focused)
+│       ├── recipes/
+│       │   ├── page.tsx    # Browse (SSR)
+│       │   └── [id]/page.tsx # Detail (SSR)
+│       └── favorites/page.tsx # Favorites (CSR)
 ├── components/
 │   ├── common/             # Atomic: Button, Badge, Card, Spinner, etc.
 │   ├── recipe/             # RecipeCard, RecipeMasonry, RecipeCarousel, etc.
 │   ├── search/             # SearchBar, SearchResults
 │   ├── filters/            # FilterBar, FilterChip
 │   ├── favorites/          # FavoriteButton
-│   └── layout/             # Header, Footer
+│   └── layout/             # Header, Footer, LanguageSwitcher
 ├── lib/
 │   ├── hooks/              # Custom React hooks
 │   ├── utils/              # Utility functions
-│   └── data/               # Data access layer
+│   ├── data/               # Data access layer
+│   └── i18n/               # Internationalization config
+├── messages/                # UI translations (en, es, pt, it)
 ├── types/                   # TypeScript definitions
-└── data/                    # JSON source of truth
+├── data/                    # JSON source of truth
+│   ├── recipes/            # Recipes by language (en, es, pt, it)
+│   └── categories/         # Categories by language (en, es, pt, it)
+├── middleware.ts            # Locale detection & routing
 ```
 
 **TypeScript Configuration:**
@@ -120,18 +129,27 @@ recipe-web/
 
 ## Data Management
 
-**Source of Truth:** `/data/recipes.json` and `/data/categories.json`
+**Source of Truth:** `/data/recipes/*.json` and `/data/categories/*.json` (by language)
 
 **Adding New Recipes:**
-1. Add recipe object to `data/recipes.json` following the Recipe type
-2. Add images to `public/images/recipes/`
-3. Ensure all required fields are present
-4. Categories must match predefined IDs in `data/categories.json`
+1. Add recipe object to all language files: `data/recipes/en.json`, `es.json`, `pt.json`, `it.json`
+2. Keep recipe IDs and category IDs consistent across all languages
+3. Translate: title, description, ingredient names, instructions
+4. Keep unchanged: id, images, prepTime, cookTime, servings, difficulty, category IDs
+5. Add images to `public/images/recipes/`
+6. Use standardized units: g, kg, ml, l, pieces, cloves, tsp, tbsp (translatable)
+7. Avoid English-only terms like "large", "medium" - use "pieces" with size in notes
 
 **Data Access Layer:**
-- `lib/data/recipes.ts` - Functions to get/filter recipes
-- `lib/data/categories.ts` - Functions to get categories
+- `lib/data/recipes.ts` - Functions to get/filter recipes (accepts locale parameter)
+- `lib/data/categories.ts` - Functions to get categories (accepts locale parameter)
 - All functions are async (even though reading JSON) for future API migration
+
+**Internationalization:**
+- `lib/i18n/config.ts` - Supported locales and configuration
+- `lib/i18n/request.ts` - Server-side translation setup
+- `middleware.ts` - Locale detection and routing
+- `messages/*.json` - UI translations for each language
 
 ## Custom Hooks
 
@@ -159,10 +177,12 @@ recipe-web/
 
 | Route | Rendering | Purpose | Key Features |
 |-------|-----------|---------|--------------|
-| `/` | CSR | Home/Search | Large search bar, real-time results, recent recipes |
-| `/recipes` | SSR | Browse | Sidebar filters, masonry grid |
-| `/recipes/[id]` | SSR | Recipe Detail | Carousel, 2-column layout, share, favorite |
-| `/favorites` | CSR | Saved Recipes | localStorage-based favorites list |
+| `/[locale]` | CSR | Home/Search | Large search bar, real-time results, recent recipes |
+| `/[locale]/recipes` | SSR | Browse | Sidebar filters, masonry grid |
+| `/[locale]/recipes/[id]` | SSR | Recipe Detail | Carousel, 2-column layout, share, favorite |
+| `/[locale]/favorites` | CSR | Saved Recipes | localStorage-based favorites list |
+
+**Locale Support:** en (English), es (Spanish), pt (Portuguese), it (Italian)
 
 **SSR vs CSR Decision:**
 - SSR: Pages needing SEO, shareable URLs (browse, detail)
