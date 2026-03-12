@@ -4,15 +4,27 @@ import { InputHTMLAttributes, forwardRef } from 'react';
 import { cn } from '@/lib/utils/cn';
 import { Spinner } from '@/components/common/Spinner';
 
-export interface SearchBarProps extends Omit<InputHTMLAttributes<HTMLInputElement>, 'onChange'> {
+export interface SearchBarProps extends Omit<InputHTMLAttributes<HTMLInputElement>, 'onChange' | 'onKeyDown'> {
   onSearch: (query: string) => void;
+  onEnter?: (query: string) => void;
+  onEscape?: () => void;
   loading?: boolean;
 }
 
 export const SearchBar = forwardRef<HTMLInputElement, SearchBarProps>(
-  ({ onSearch, loading = false, placeholder = 'Search recipes...', className, ...props }, ref) => {
+  ({ onSearch, onEnter, onEscape, loading = false, placeholder = 'Search recipes...', className, ...props }, ref) => {
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
       onSearch(e.target.value);
+    };
+
+    const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+      if (e.key === 'Enter' && onEnter && e.currentTarget.value.trim()) {
+        e.preventDefault();
+        onEnter(e.currentTarget.value.trim());
+      } else if (e.key === 'Escape' && onEscape && !e.currentTarget.value.trim()) {
+        e.preventDefault();
+        onEscape();
+      }
     };
 
     const handleClear = () => {
@@ -43,6 +55,7 @@ export const SearchBar = forwardRef<HTMLInputElement, SearchBarProps>(
           ref={ref}
           type="text"
           onChange={handleChange}
+          onKeyDown={handleKeyDown}
           placeholder={placeholder}
           className={cn(
             'h-14 w-full rounded-lg border-2 border-gray-300 bg-white pl-14 pr-12 text-lg text-gray-900 placeholder-gray-500 transition-colors focus:border-primary-500 focus:outline-none focus:ring-0 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-100 dark:placeholder-gray-400 dark:focus:border-primary-400',

@@ -5,7 +5,8 @@ import Link from 'next/link';
 import { useLocale, useTranslations } from 'next-intl';
 import { SearchBar } from '@/components/search/SearchBar';
 import { SearchResults } from '@/components/search/SearchResults';
-import { useSearch } from '@/lib/hooks/useSearch';
+import { SearchFilterChips } from '@/components/search/SearchFilterChips';
+import { useSmartSearch } from '@/lib/hooks/useSmartSearch';
 import { useRecentRecipes } from '@/lib/hooks/useRecentRecipes';
 import { getAllRecipes, getRecipesByIds } from '@/lib/data/recipes';
 import type { Recipe } from '@/types/recipe';
@@ -31,10 +32,32 @@ export default function HomePage() {
     }
   }, [recentRecipeIds, locale]);
 
-  const { query, setQuery, results, loading } = useSearch(allRecipes);
+  const {
+    query,
+    setQuery,
+    results,
+    loading,
+    searchFilters,
+    addSearchFilter,
+    removeSearchFilter,
+    removeLastSearchFilter,
+    clearSearchFilters,
+  } = useSmartSearch(allRecipes);
 
-  // Show search results if query exists, otherwise show recent recipes
-  const displayRecipes = query.length >= 2 ? results : recentRecipes;
+  // Handle Enter key in search bar - add any text as filter
+  const handleSearchEnter = (searchQuery: string) => {
+    addSearchFilter(searchQuery);
+    setQuery(''); // Clear search input after adding filter
+  };
+
+  // Handle Escape key in search bar (remove last filter)
+  const handleSearchEscape = () => {
+    removeLastSearchFilter();
+  };
+
+  // Show search results if query or filters exist, otherwise show recent recipes
+  const hasActiveSearch = query.length >= 2 || searchFilters.length > 0;
+  const displayRecipes = hasActiveSearch ? results : recentRecipes;
 
   return (
     <div className="container mx-auto px-4 py-12">
@@ -50,11 +73,24 @@ export default function HomePage() {
         <div className="mx-auto max-w-3xl">
           <SearchBar
             onSearch={setQuery}
+            onEnter={handleSearchEnter}
+            onEscape={handleSearchEscape}
             placeholder={t('searchPlaceholder')}
             value={query}
             loading={loading}
             autoFocus
           />
+
+          {/* Search Filter Chips */}
+          {searchFilters.length > 0 && (
+            <div className="mt-4">
+              <SearchFilterChips
+                filters={searchFilters}
+                onRemove={removeSearchFilter}
+                onClearAll={clearSearchFilters}
+              />
+            </div>
+          )}
         </div>
       </section>
 
@@ -68,8 +104,8 @@ export default function HomePage() {
         }
       />
 
-      {/* Show hint when no query and no recent recipes */}
-      {!query && recentRecipes.length === 0 && !loading && (
+      {/* Show hint when no query/filters and no recent recipes */}
+      {!hasActiveSearch && recentRecipes.length === 0 && !loading && (
         <div className="mt-12 text-center">
           <p className="text-gray-600 dark:text-gray-400">
             {t('recentRecipes')}{' '}
