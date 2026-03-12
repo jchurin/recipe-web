@@ -7,15 +7,16 @@ import { RecipeInstructions } from '@/components/recipe/RecipeInstructions';
 import { RecipeNutrition } from '@/components/recipe/RecipeNutrition';
 import { RecipeShare } from '@/components/recipe/RecipeShare';
 import { FavoriteButton } from '@/components/favorites/FavoriteButton';
-import { Badge } from '@/components/common/Badge';
+import { CategoryBadges } from '@/components/recipe/CategoryBadges';
+import type { Locale } from '@/lib/i18n/config';
 
 interface RecipeDetailPageProps {
-  params: Promise<{ id: string }>;
+  params: Promise<{ id: string; locale: string }>;
 }
 
 export async function generateMetadata({ params }: RecipeDetailPageProps) {
-  const { id } = await params;
-  const recipe = await getRecipeById(id);
+  const { id, locale } = await params;
+  const recipe = await getRecipeById(id, locale as Locale);
 
   if (!recipe) {
     return {
@@ -35,15 +36,25 @@ export async function generateMetadata({ params }: RecipeDetailPageProps) {
 }
 
 export async function generateStaticParams() {
-  const recipes = await getAllRecipes();
-  return recipes.map((recipe) => ({
-    id: recipe.id,
-  }));
+  // Generate params for all locales and all recipes
+  const locales: Locale[] = ['en', 'es', 'pt', 'it'];
+  const allParams = [];
+
+  for (const locale of locales) {
+    const recipes = await getAllRecipes(locale);
+    const params = recipes.map((recipe) => ({
+      locale,
+      id: recipe.id,
+    }));
+    allParams.push(...params);
+  }
+
+  return allParams;
 }
 
 export default async function RecipeDetailPage({ params }: RecipeDetailPageProps) {
-  const { id } = await params;
-  const recipe = await getRecipeById(id);
+  const { id, locale } = await params;
+  const recipe = await getRecipeById(id, locale as Locale);
 
   if (!recipe) {
     notFound();
@@ -74,23 +85,11 @@ export default async function RecipeDetailPage({ params }: RecipeDetailPageProps
 
         {/* Categories and Meta in one line */}
         <div className="flex flex-wrap items-center gap-3">
-          <div className="flex flex-wrap gap-1.5">
-            {recipe.categories.cuisineType.slice(0, 2).map((cuisine) => (
-              <Badge key={cuisine} variant="primary" size="sm">
-                {cuisine}
-              </Badge>
-            ))}
-            {recipe.categories.mealType.slice(0, 1).map((meal) => (
-              <Badge key={meal} variant="accent" size="sm">
-                {meal}
-              </Badge>
-            ))}
-            {recipe.categories.dietaryRestrictions.slice(0, 2).map((dietary) => (
-              <Badge key={dietary} variant="success" size="sm">
-                {dietary}
-              </Badge>
-            ))}
-          </div>
+          <CategoryBadges
+            cuisineTypes={recipe.categories.cuisineType}
+            mealTypes={recipe.categories.mealType}
+            dietaryRestrictions={recipe.categories.dietaryRestrictions}
+          />
           <div className="h-4 w-px bg-gray-300 dark:bg-gray-600" />
           <RecipeMeta recipe={recipe} />
         </div>

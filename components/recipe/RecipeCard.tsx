@@ -1,15 +1,19 @@
 'use client';
 
-import { memo, useState } from 'react';
+import { memo, useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { Share2, Check, MessageCircle, Heart } from 'lucide-react';
+import { useTranslations, useLocale } from 'next-intl';
 import type { Recipe } from '@/types/recipe';
+import type { Categories } from '@/types/category';
 import { Badge } from '@/components/common/Badge';
 import { formatTime, getRecipeUrl, copyToClipboard } from '@/lib/utils/format';
 import { cn } from '@/lib/utils/cn';
 import { useFavorites } from '@/lib/hooks/useFavorites';
+import { getAllCategories } from '@/lib/data/categories';
+import type { Locale } from '@/lib/i18n/config';
 import { CardActionButton } from './CardActionButton';
 
 export interface RecipeCardProps {
@@ -27,11 +31,28 @@ export const RecipeCard = memo(function RecipeCard({
   const [copied, setCopied] = useState(false);
   const { isFavorite, toggleFavorite } = useFavorites();
   const favorite = isFavorite(recipe.id);
+  const locale = useLocale() as Locale;
+  const tDifficulty = useTranslations('difficulty');
+  const tRecipe = useTranslations('recipe');
+  const [categories, setCategories] = useState<Categories | null>(null);
+
+  // Load categories for translated labels
+  useEffect(() => {
+    getAllCategories(locale).then(setCategories);
+  }, [locale]);
 
   const difficultyColor = {
     easy: 'success' as const,
     medium: 'warning' as const,
     hard: 'error' as const,
+  };
+
+  // Helper to get translated category label
+  const getCategoryLabel = (categoryId: string, type: 'cuisineType' | 'mealType') => {
+    if (!categories) return categoryId;
+    const categoryList = type === 'cuisineType' ? categories.cuisineTypes : categories.mealTypes;
+    const category = categoryList?.find((c) => c.id === categoryId);
+    return category?.label || categoryId;
   };
 
   const handleFavorite = (e: React.MouseEvent<HTMLButtonElement>) => {
@@ -118,7 +139,7 @@ export const RecipeCard = memo(function RecipeCard({
             {/* Difficulty Badge */}
             <div className="absolute bottom-2 right-2">
               <Badge variant={difficultyColor[recipe.difficulty]} size="sm">
-                {recipe.difficulty}
+                {tDifficulty(recipe.difficulty)}
               </Badge>
             </div>
           </div>
@@ -164,7 +185,7 @@ export const RecipeCard = memo(function RecipeCard({
                   <circle cx="9" cy="7" r="4" />
                   <path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
                 </svg>
-                <span>{recipe.servings} servings</span>
+                <span>{recipe.servings} {tRecipe('servings')}</span>
               </div>
             </div>
 
@@ -173,12 +194,12 @@ export const RecipeCard = memo(function RecipeCard({
               <div className="mt-3 flex flex-wrap gap-1">
                 {recipe.categories.cuisineType.slice(0, 2).map((cuisine) => (
                   <Badge key={cuisine} variant="primary" size="sm">
-                    {cuisine}
+                    {getCategoryLabel(cuisine, 'cuisineType')}
                   </Badge>
                 ))}
                 {recipe.categories.mealType.slice(0, 1).map((meal) => (
                   <Badge key={meal} variant="accent" size="sm">
-                    {meal}
+                    {getCategoryLabel(meal, 'mealType')}
                   </Badge>
                 ))}
               </div>

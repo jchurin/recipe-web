@@ -1,0 +1,41 @@
+{
+  "cuisineTypes": [
+    { "id": "italian", "label": "Italiana", "icon": "🍝", "description": "Cocina italiana clásica" },
+    { "id": "mexican", "label": "Mexicana", "icon": "🌮", "description": "Platos tradicionales mexicanos" },
+    { "id": "asian", "label": "Asiática", "icon": "🍜", "description": "Cocinas pan-asiáticas" },
+    { "id": "american", "label": "Americana", "icon": "🍔", "description": "Clásicos americanos" },
+    { "id": "thai", "label": "Tailandesa", "icon": "🌶️", "description": "Comida tailandesa auténtica" },
+    { "id": "chinese", "label": "China", "icon": "🥢", "description": "Cocina china" },
+    { "id": "greek", "label": "Griega", "icon": "🫒", "description": "Mediterránea griega" },
+    { "id": "vietnamese", "label": "Vietnamita", "icon": "🍲", "description": "Especialidades vietnamitas" },
+    { "id": "mediterranean", "label": "Mediterránea", "icon": "🐟", "description": "Sabores mediterráneos" },
+    { "id": "european", "label": "Europea", "icon": "🇪🇺", "description": "Cocina europea" }
+  ],
+  "mealTypes": [
+    { "id": "breakfast", "label": "Desayuno", "icon": "🍳", "description": "Comidas de la mañana" },
+    { "id": "lunch", "label": "Almuerzo", "icon": "🥗", "description": "Comidas del mediodía" },
+    { "id": "dinner", "label": "Cena", "icon": "🍽️", "description": "Comidas de la tarde" },
+    { "id": "dessert", "label": "Postre", "icon": "🍰", "description": "Dulces" },
+    { "id": "snack", "label": "Snack", "icon": "🍿", "description": "Bocadillos ligeros" }
+  ],
+  "dietaryRestrictions": [
+    { "id": "vegetarian", "label": "Vegetariano", "icon": "🥬", "description": "Sin carne ni pescado" },
+    { "id": "vegan", "label": "Vegano", "icon": "🌱", "description": "Sin productos animales" },
+    { "id": "gluten-free", "label": "Sin Gluten", "icon": "🚫🌾", "description": "Sin granos con gluten" },
+    { "id": "dairy-free", "label": "Sin Lácteos", "icon": "🚫🥛", "description": "Sin productos lácteos" },
+    { "id": "keto", "label": "Keto", "icon": "🥑", "description": "Bajo en carbohidratos, alto en grasas" }
+  ],
+  "cookingTimes": [
+    { "id": "quick", "label": "Rápido (<30 min)", "icon": "⚡", "maxMinutes": 30, "description": "Listo en menos de 30 minutos" },
+    { "id": "medium", "label": "Medio (30-60 min)", "icon": "⏱️", "maxMinutes": 60, "description": "30 a 60 minutos" },
+    { "id": "long", "label": "Largo (>60 min)", "icon": "⏳", "description": "Más de 60 minutos" }
+  ],
+  "allergens": [
+    { "id": "dairy", "label": "Lácteos", "icon": "🥛", "description": "Contiene productos lácteos" },
+    { "id": "wheat", "label": "Trigo/Gluten", "icon": "🌾", "description": "Contiene trigo o gluten" },
+    { "id": "nuts", "label": "Frutos Secos", "icon": "🥜", "description": "Contiene nueces o maní" },
+    { "id": "soy", "label": "Soja", "icon": "🫘", "description": "Contiene productos de soja" },
+    { "id": "eggs", "label": "Huevos", "icon": "🥚", "description": "Contiene huevos" },
+    { "id": "shellfish", "label": "Mariscos", "icon": "🦐", "description": "Contiene mariscos" }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "cuisineTypes": [
+    { "id": "italian", "label": "Italian", "icon": "🍝", "description": "Classic Italian cuisine" },
+    { "id": "mexican", "label": "Mexican", "icon": "🌮", "description": "Traditional Mexican dishes" },
+    { "id": "asian", "label": "Asian", "icon": "🍜", "description": "Pan-Asian cuisines" },
+    { "id": "american", "label": "American", "icon": "🍔", "description": "American classics" },
+    { "id": "thai", "label": "Thai", "icon": "🌶️", "description": "Authentic Thai food" },
+    { "id": "chinese", "label": "Chinese", "icon": "🥢", "description": "Chinese cooking" },
+    { "id": "greek", "label": "Greek", "icon": "🫒", "description": "Greek Mediterranean" },
+    { "id": "vietnamese", "label": "Vietnamese", "icon": "🍲", "description": "Vietnamese specialties" },
+    { "id": "mediterranean", "label": "Mediterranean", "icon": "🐟", "description": "Mediterranean flavors" },
+    { "id": "european", "label": "European", "icon": "🇪🇺", "description": "European cuisine" }
+  ],
+  "mealTypes": [
+    { "id": "breakfast", "label": "Breakfast", "icon": "🍳", "description": "Morning meals" },
+    { "id": "lunch", "label": "Lunch", "icon": "🥗", "description": "Midday meals" },
+    { "id": "dinner", "label": "Dinner", "icon": "🍽️", "description": "Evening meals" },
+    { "id": "dessert", "label": "Dessert", "icon": "🍰", "description": "Sweet treats" },
+    { "id": "snack", "label": "Snack", "icon": "🍿", "description": "Light snacks" }
+  ],
+  "dietaryRestrictions": [
+    { "id": "vegetarian", "label": "Vegetarian", "icon": "🥬", "description": "No meat or fish" },
+    { "id": "vegan", "label": "Vegan", "icon": "🌱", "description": "No animal products" },
+    { "id": "gluten-free", "label": "Gluten Free", "icon": "🚫🌾", "description": "No gluten-containing grains" },
+    { "id": "dairy-free", "label": "Dairy Free", "icon": "🚫🥛", "description": "No dairy products" },
+    { "id": "keto", "label": "Keto", "icon": "🥑", "description": "Low-carb, high-fat" }
+  ],
+  "cookingTimes": [
+    { "id": "quick", "label": "Quick (<30 min)", "icon": "⚡", "maxMinutes": 30, "description": "Ready in under 30 minutes" },
+    { "id": "medium", "label": "Medium (30-60 min)", "icon": "⏱️", "maxMinutes": 60, "description": "30 to 60 minutes" },
+    { "id": "long", "label": "Long (>60 min)", "icon": "⏳", "description": "Over 60 minutes" }
+  ],
+  "allergens": [
+    { "id": "dairy", "label": "Dairy", "icon": "🥛", "description": "Contains milk products" },
+    { "id": "wheat", "label": "Wheat/Gluten", "icon": "🌾", "description": "Contains wheat or gluten" },
+    { "id": "nuts", "label": "Nuts", "icon": "🥜", "description": "Contains tree nuts or peanuts" },
+    { "id": "soy", "label": "Soy", "icon": "🫘", "description": "Contains soy products" },
+    { "id": "eggs", "label": "Eggs", "icon": "🥚", "description": "Contains eggs" },
+    { "id": "shellfish", "label": "Shellfish", "icon": "🦐", "description": "Contains shellfish" }
+  ]
+}

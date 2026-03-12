@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { Share2, Check, MessageCircle } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 import { Button } from '@/components/common/Button';
 import { getRecipeUrl, copyToClipboard } from '@/lib/utils/format';
 
@@ -12,6 +13,7 @@ export interface RecipeShareProps {
 
 export function RecipeShare({ recipeId, recipeTitle }: RecipeShareProps) {
   const [copied, setCopied] = useState(false);
+  const t = useTranslations('common');
 
   const handleCopyLink = async () => {
     const url = getRecipeUrl(recipeId);
@@ -33,18 +35,18 @@ export function RecipeShare({ recipeId, recipeTitle }: RecipeShareProps) {
         {copied ? (
           <>
             <Check className="mr-1.5 h-4 w-4" />
-            Copied!
+            {t('copied')}
           </>
         ) : (
           <>
             <Share2 className="mr-1.5 h-4 w-4" />
-            Copy Link
+            {t('copyLink')}
           </>
         )}
       </Button>
       <Button onClick={handleWhatsAppShare} variant="primary" size="sm">
         <MessageCircle className="mr-1.5 h-4 w-4" />
-        WhatsApp
+        {t('whatsapp')}
       </Button>
     </div>
   );

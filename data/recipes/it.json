@@ -1,0 +1,477 @@
+[
+  {
+    "id": "pasta-carbonara",
+    "title": "Pasta Carbonara Classica",
+    "description": "Un piatto tradizionale italiano preparato con uova, formaggio, pancetta e pepe nero. Cremosa e soddisfacente senza l'uso di panna.",
+    "images": ["/images/recipes/carbonara-1.jpg", "/images/recipes/carbonara-2.jpg"],
+    "prepTime": 10,
+    "cookTime": 20,
+    "totalTime": 30,
+    "servings": 4,
+    "difficulty": "medium",
+    "ingredients": [
+      { "id": "1", "name": "spaghetti", "quantity": 400, "unit": "g" },
+      { "id": "2", "name": "pancetta", "quantity": 200, "unit": "g", "notes": "tagliata a dadini" },
+      { "id": "3", "name": "uova", "quantity": 4, "unit": "large" },
+      { "id": "4", "name": "Pecorino Romano", "quantity": 100, "unit": "g", "notes": "grattugiato" },
+      { "id": "5", "name": "pepe nero", "quantity": 2, "unit": "tsp", "notes": "macinato fresco" },
+      { "id": "6", "name": "sale", "quantity": 1, "unit": "tsp" }
+    ],
+    "instructions": [
+      { "step": 1, "text": "Portare a ebollizione una grande pentola di acqua salata. Cuocere gli spaghetti seguendo le indicazioni della confezione fino a cottura al dente.", "timer": 10 },
+      { "step": 2, "text": "Mentre la pasta cuoce, rosolare la pancetta in una grande padella a fuoco medio fino a doratura, circa 5 minuti." },
+      { "step": 3, "text": "In una ciotola, sbattere insieme le uova, il Pecorino Romano grattugiato e il pepe nero." },
+      { "step": 4, "text": "Riservare 1 tazza di acqua di cottura della pasta, poi scolare la pasta." },
+      { "step": 5, "text": "Aggiungere la pasta calda alla padella con la pancetta. Togliere dal fuoco." },
+      { "step": 6, "text": "Versare rapidamente il composto di uova, mescolando continuamente. Aggiungere l'acqua di cottura secondo necessità per creare una salsa cremosa." },
+      { "step": 7, "text": "Servire immediatamente con formaggio e pepe nero extra." }
+    ],
+    "categories": {
+      "cuisineType": ["italian", "european"],
+      "mealType": ["dinner", "lunch"],
+      "dietaryRestrictions": [],
+      "cookingTime": "quick"
+    },
+    "nutrition": {
+      "calories": 580,
+      "protein": 28,
+      "carbs": 65,
+      "fat": 22,
+      "allergens": ["wheat", "eggs", "dairy"]
+    },
+    "createdAt": "2026-03-10T00:00:00Z",
+    "updatedAt": "2026-03-10T00:00:00Z"
+  },
+  {
+    "id": "breakfast-tacos",
+    "title": "Tacos Messicani per Colazione",
+    "description": "Tacos per colazione veloci e deliziosi farciti con uova strapazzate, formaggio, salsa e avocado. Perfetti per mattine impegnative.",
+    "images": ["/images/recipes/breakfast-tacos-1.jpg"],
+    "prepTime": 5,
+    "cookTime": 10,
+    "totalTime": 15,
+    "servings": 2,
+    "difficulty": "easy",
+    "ingredients": [
+      { "id": "1", "name": "tortillas di farina", "quantity": 4, "unit": "small" },
+      { "id": "2", "name": "uova", "quantity": 4, "unit": "large" },
+      { "id": "3", "name": "formaggio cheddar", "quantity": 50, "unit": "g", "notes": "grattugiato" },
+      { "id": "4", "name": "avocado", "quantity": 1, "unit": "medium", "notes": "affettato" },
+      { "id": "5", "name": "salsa", "quantity": 4, "unit": "tbsp" },
+      { "id": "6", "name": "burro", "quantity": 1, "unit": "tbsp" },
+      { "id": "7", "name": "sale e pepe", "quantity": 1, "unit": "pinch" }
+    ],
+    "instructions": [
+      { "step": 1, "text": "Sbattere le uova con sale e pepe in una ciotola." },
+      { "step": 2, "text": "Sciogliere il burro in una padella antiaderente a fuoco medio." },
+      { "step": 3, "text": "Versare le uova e strapazzarle delicatamente fino a quando sono appena rapprese, circa 3-4 minuti.", "timer": 4 },
+      { "step": 4, "text": "Scaldare le tortillas in una padella asciutta o nel microonde per 20 secondi." },
+      { "step": 5, "text": "Dividere le uova strapazzate tra le tortillas." },
+      { "step": 6, "text": "Completare con formaggio, fette di avocado e salsa. Piegare e servire immediatamente." }
+    ],
+    "categories": {
+      "cuisineType": ["mexican", "american"],
+      "mealType": ["breakfast"],
+      "dietaryRestrictions": ["vegetarian"],
+      "cookingTime": "quick"
+    },
+    "nutrition": {
+      "calories": 420,
+      "protein": 22,
+      "carbs": 32,
+      "fat": 23,
+      "allergens": ["wheat", "eggs", "dairy"]
+    },
+    "createdAt": "2026-03-10T00:00:00Z",
+    "updatedAt": "2026-03-10T00:00:00Z"
+  },
+  {
+    "id": "pad-thai",
+    "title": "Pad Thai Autentico",
+    "description": "Il piatto di noodles da strada più famoso della Thailandia con noodles di riso, gamberi, arachidi e un equilibrio perfetto di sapori dolci, aspri e salati.",
+    "images": ["/images/recipes/pad-thai-1.jpg", "/images/recipes/pad-thai-2.jpg"],
+    "prepTime": 20,
+    "cookTime": 15,
+    "totalTime": 35,
+    "servings": 4,
+    "difficulty": "medium",
+    "ingredients": [
+      { "id": "1", "name": "noodles di riso", "quantity": 300, "unit": "g", "notes": "secchi" },
+      { "id": "2", "name": "gamberi", "quantity": 300, "unit": "g", "notes": "sgusciati e puliti" },
+      { "id": "3", "name": "uova", "quantity": 2, "unit": "large" },
+      { "id": "4", "name": "germogli di soia", "quantity": 150, "unit": "g" },
+      { "id": "5", "name": "cipollotti", "quantity": 4, "unit": "stalks", "notes": "tritati" },
+      { "id": "6", "name": "aglio", "quantity": 3, "unit": "cloves", "notes": "tritato" },
+      { "id": "7", "name": "pasta di tamarindo", "quantity": 3, "unit": "tbsp" },
+      { "id": "8", "name": "salsa di pesce", "quantity": 3, "unit": "tbsp" },
+      { "id": "9", "name": "zucchero di canna", "quantity": 2, "unit": "tbsp" },
+      { "id": "10", "name": "arachidi", "quantity": 50, "unit": "g", "notes": "tritate" },
+      { "id": "11", "name": "lime", "quantity": 2, "unit": "whole", "notes": "tagliato a spicchi" },
+      { "id": "12", "name": "olio vegetale", "quantity": 3, "unit": "tbsp" }
+    ],
+    "instructions": [
+      { "step": 1, "text": "Mettere in ammollo i noodles di riso in acqua tiepida per 30 minuti, poi scolarli.", "timer": 30 },
+      { "step": 2, "text": "Mescolare la pasta di tamarindo, la salsa di pesce e lo zucchero di canna in una piccola ciotola per preparare la salsa." },
+      { "step": 3, "text": "Scaldare 2 cucchiai di olio in un wok a fuoco alto. Aggiungere i gamberi e cuocere fino a quando diventano rosa, circa 3 minuti. Togliere e mettere da parte." },
+      { "step": 4, "text": "Aggiungere l'olio rimanente al wok. Strapazzare le uova, rompendole in piccoli pezzi." },
+      { "step": 5, "text": "Aggiungere l'aglio e saltare per 30 secondi fino a quando diventa profumato." },
+      { "step": 6, "text": "Aggiungere i noodles scolati e la salsa. Mescolare per 2-3 minuti fino a quando i noodles sono teneri." },
+      { "step": 7, "text": "Rimettere i gamberi nel wok. Aggiungere i germogli di soia e i cipollotti. Mescolare per 1 minuto." },
+      { "step": 8, "text": "Servire immediatamente con arachidi tritate e spicchi di lime." }
+    ],
+    "categories": {
+      "cuisineType": ["thai", "asian"],
+      "mealType": ["dinner", "lunch"],
+      "dietaryRestrictions": [],
+      "cookingTime": "quick"
+    },
+    "nutrition": {
+      "calories": 485,
+      "protein": 26,
+      "carbs": 62,
+      "fat": 14,
+      "allergens": ["shellfish", "eggs", "nuts", "soy"]
+    },
+    "createdAt": "2026-03-10T00:00:00Z",
+    "updatedAt": "2026-03-10T00:00:00Z"
+  },
+  {
+    "id": "fluffy-pancakes",
+    "title": "Pancakes Soffici al Latticello",
+    "description": "Pancakes leggeri, soffici e perfettamente dorati che sono veloci da preparare. Il segreto sta nel latticello e nel non mescolare troppo l'impasto.",
+    "images": ["/images/recipes/pancakes-1.jpg"],
+    "prepTime": 5,
+    "cookTime": 15,
+    "totalTime": 20,
+    "servings": 4,
+    "difficulty": "easy",
+    "ingredients": [
+      { "id": "1", "name": "farina tipo 00", "quantity": 200, "unit": "g" },
+      { "id": "2", "name": "zucchero", "quantity": 2, "unit": "tbsp" },
+      { "id": "3", "name": "lievito in polvere", "quantity": 2, "unit": "tsp" },
+      { "id": "4", "name": "bicarbonato di sodio", "quantity": 0.5, "unit": "tsp" },
+      { "id": "5", "name": "sale", "quantity": 0.5, "unit": "tsp" },
+      { "id": "6", "name": "latticello", "quantity": 300, "unit": "ml" },
+      { "id": "7", "name": "uovo", "quantity": 1, "unit": "large" },
+      { "id": "8", "name": "burro fuso", "quantity": 3, "unit": "tbsp" },
+      { "id": "9", "name": "estratto di vaniglia", "quantity": 1, "unit": "tsp" }
+    ],
+    "instructions": [
+      { "step": 1, "text": "In una grande ciotola, sbattere insieme la farina, lo zucchero, il lievito, il bicarbonato e il sale." },
+      { "step": 2, "text": "In un'altra ciotola, sbattere il latticello, l'uovo, il burro fuso e la vaniglia." },
+      { "step": 3, "text": "Versare gli ingredienti liquidi in quelli secchi. Mescolare delicatamente fino a quando sono appena combinati. I grumi vanno bene!" },
+      { "step": 4, "text": "Scaldare una piastra antiaderente o una padella a fuoco medio. Ungere leggermente con il burro." },
+      { "step": 5, "text": "Versare 1/4 di tazza di impasto per ogni pancake. Cuocere fino a quando si formano bolle sulla superficie, circa 2-3 minuti.", "timer": 3 },
+      { "step": 6, "text": "Girare e cuocere fino a doratura, altri 2 minuti." },
+      { "step": 7, "text": "Servire caldi con sciroppo d'acero, burro e frutti di bosco freschi." }
+    ],
+    "categories": {
+      "cuisineType": ["american"],
+      "mealType": ["breakfast"],
+      "dietaryRestrictions": ["vegetarian"],
+      "cookingTime": "quick"
+    },
+    "nutrition": {
+      "calories": 320,
+      "protein": 9,
+      "carbs": 48,
+      "fat": 11,
+      "allergens": ["wheat", "eggs", "dairy"]
+    },
+    "createdAt": "2026-03-10T00:00:00Z",
+    "updatedAt": "2026-03-10T00:00:00Z"
+  },
+  {
+    "id": "margherita-pizza",
+    "title": "Pizza Margherita",
+    "description": "Pizza italiana classica con mozzarella fresca, pomodori e basilico. Ingredienti semplici che evidenziano la qualità e la tradizione.",
+    "images": ["/images/recipes/margherita-1.jpg", "/images/recipes/margherita-2.jpg"],
+    "prepTime": 90,
+    "cookTime": 12,
+    "totalTime": 102,
+    "servings": 2,
+    "difficulty": "medium",
+    "ingredients": [
+      { "id": "1", "name": "impasto per pizza", "quantity": 400, "unit": "g", "notes": "già pronto o fatto in casa" },
+      { "id": "2", "name": "pomodori pelati", "quantity": 200, "unit": "g" },
+      { "id": "3", "name": "mozzarella fresca", "quantity": 200, "unit": "g", "notes": "strappata a pezzi" },
+      { "id": "4", "name": "foglie di basilico fresco", "quantity": 15, "unit": "leaves" },
+      { "id": "5", "name": "olio d'oliva", "quantity": 3, "unit": "tbsp" },
+      { "id": "6", "name": "aglio", "quantity": 2, "unit": "cloves", "notes": "tritato" },
+      { "id": "7", "name": "sale", "quantity": 1, "unit": "tsp" },
+      { "id": "8", "name": "origano secco", "quantity": 1, "unit": "tsp" }
+    ],
+    "instructions": [
+      { "step": 1, "text": "Se si utilizza impasto già pronto, lasciarlo raggiungere la temperatura ambiente per 30 minuti.", "timer": 30 },
+      { "step": 2, "text": "Preriscaldare il forno alla temperatura massima (di solito 260°C) con una pietra refrattaria o una teglia all'interno per 30 minuti." },
+      { "step": 3, "text": "Mescolare i pomodori pelati con l'aglio, l'origano, il sale e 1 cucchiaio di olio d'oliva." },
+      { "step": 4, "text": "Stendere l'impasto in due dischi di 25 cm su una superficie infarinata." },
+      { "step": 5, "text": "Trasferire l'impasto su carta da forno. Distribuire la salsa di pomodoro, lasciando un bordo di 2 cm." },
+      { "step": 6, "text": "Aggiungere i pezzi di mozzarella distribuiti uniformemente sulla salsa." },
+      { "step": 7, "text": "Irrorare con l'olio d'oliva rimanente. Trasferire sulla pietra calda e cuocere per 10-12 minuti fino a quando la crosta è dorata e il formaggio è bollente.", "timer": 12 },
+      { "step": 8, "text": "Togliere dal forno e guarnire immediatamente con le foglie di basilico fresco. Tagliare e servire." }
+    ],
+    "categories": {
+      "cuisineType": ["italian", "european"],
+      "mealType": ["dinner", "lunch"],
+      "dietaryRestrictions": ["vegetarian"],
+      "cookingTime": "medium"
+    },
+    "nutrition": {
+      "calories": 620,
+      "protein": 28,
+      "carbs": 72,
+      "fat": 24,
+      "allergens": ["wheat", "dairy"]
+    },
+    "createdAt": "2026-03-10T00:00:00Z",
+    "updatedAt": "2026-03-10T00:00:00Z"
+  },
+  {
+    "id": "vegetable-stir-fry",
+    "title": "Verdure Saltate Colorate",
+    "description": "Un piatto vegano vibrante e salutare ricco di verdure croccanti in una salsa saporita. Veloce, facile e personalizzabile.",
+    "images": ["/images/recipes/stir-fry-1.jpg"],
+    "prepTime": 15,
+    "cookTime": 10,
+    "totalTime": 25,
+    "servings": 4,
+    "difficulty": "easy",
+    "ingredients": [
+      { "id": "1", "name": "cimette di broccoli", "quantity": 200, "unit": "g" },
+      { "id": "2", "name": "peperoni", "quantity": 2, "unit": "medium", "notes": "affettati, colori misti" },
+      { "id": "3", "name": "carote", "quantity": 2, "unit": "medium", "notes": "tagliate alla julienne" },
+      { "id": "4", "name": "piselli mangiatutto", "quantity": 150, "unit": "g" },
+      { "id": "5", "name": "funghi", "quantity": 150, "unit": "g", "notes": "affettati" },
+      { "id": "6", "name": "aglio", "quantity": 4, "unit": "cloves", "notes": "tritato" },
+      { "id": "7", "name": "zenzero", "quantity": 1, "unit": "tbsp", "notes": "grattugiato" },
+      { "id": "8", "name": "salsa di soia", "quantity": 3, "unit": "tbsp" },
+      { "id": "9", "name": "olio di sesamo", "quantity": 2, "unit": "tsp" },
+      { "id": "10", "name": "amido di mais", "quantity": 1, "unit": "tsp" },
+      { "id": "11", "name": "olio vegetale", "quantity": 2, "unit": "tbsp" },
+      { "id": "12", "name": "semi di sesamo", "quantity": 1, "unit": "tbsp", "notes": "per guarnire" }
+    ],
+    "instructions": [
+      { "step": 1, "text": "Mescolare la salsa di soia, l'olio di sesamo, l'amido di mais e 2 cucchiai di acqua in una piccola ciotola per preparare la salsa." },
+      { "step": 2, "text": "Scaldare l'olio vegetale in un grande wok o padella a fuoco alto." },
+      { "step": 3, "text": "Aggiungere l'aglio e lo zenzero, saltare per 30 secondi fino a quando diventano profumati." },
+      { "step": 4, "text": "Aggiungere i broccoli e le carote. Saltare per 3 minuti." },
+      { "step": 5, "text": "Aggiungere i peperoni, i piselli mangiatutto e i funghi. Continuare a saltare per 3-4 minuti fino a quando le verdure sono croccanti-tenere." },
+      { "step": 6, "text": "Versare la salsa e mescolare tutto insieme per 1 minuto fino a quando le verdure sono ricoperte e la salsa si addensa." },
+      { "step": 7, "text": "Guarnire con i semi di sesamo. Servire immediatamente su riso o noodles." }
+    ],
+    "categories": {
+      "cuisineType": ["asian", "chinese"],
+      "mealType": ["dinner", "lunch"],
+      "dietaryRestrictions": ["vegan", "vegetarian"],
+      "cookingTime": "quick"
+    },
+    "nutrition": {
+      "calories": 180,
+      "protein": 6,
+      "carbs": 22,
+      "fat": 8,
+      "allergens": ["soy"]
+    },
+    "createdAt": "2026-03-10T00:00:00Z",
+    "updatedAt": "2026-03-10T00:00:00Z"
+  },
+  {
+    "id": "chocolate-chip-cookies",
+    "title": "Biscotti Perfetti con Gocce di Cioccolato",
+    "description": "Bordi croccanti con centri morbidi pieni di gocce di cioccolato. Il biscotto classico per eccellenza che non passa mai di moda.",
+    "images": ["/images/recipes/cookies-1.jpg"],
+    "prepTime": 15,
+    "cookTime": 12,
+    "totalTime": 27,
+    "servings": 24,
+    "difficulty": "easy",
+    "ingredients": [
+      { "id": "1", "name": "farina tipo 00", "quantity": 280, "unit": "g" },
+      { "id": "2", "name": "bicarbonato di sodio", "quantity": 1, "unit": "tsp" },
+      { "id": "3", "name": "sale", "quantity": 1, "unit": "tsp" },
+      { "id": "4", "name": "burro non salato", "quantity": 225, "unit": "g", "notes": "ammorbidito" },
+      { "id": "5", "name": "zucchero di canna", "quantity": 150, "unit": "g", "notes": "compatto" },
+      { "id": "6", "name": "zucchero semolato", "quantity": 100, "unit": "g" },
+      { "id": "7", "name": "uova", "quantity": 2, "unit": "large" },
+      { "id": "8", "name": "estratto di vaniglia", "quantity": 2, "unit": "tsp" },
+      { "id": "9", "name": "gocce di cioccolato", "quantity": 340, "unit": "g" }
+    ],
+    "instructions": [
+      { "step": 1, "text": "Preriscaldare il forno a 190°C. Rivestire le teglie con carta da forno." },
+      { "step": 2, "text": "Sbattere insieme la farina, il bicarbonato e il sale in una ciotola." },
+      { "step": 3, "text": "In una grande ciotola, sbattere il burro e entrambi gli zuccheri fino a quando diventano chiari e spumosi, circa 3 minuti." },
+      { "step": 4, "text": "Aggiungere le uova una alla volta, poi aggiungere l'estratto di vaniglia." },
+      { "step": 5, "text": "Incorporare gradualmente il composto di farina fino a quando è appena combinato." },
+      { "step": 6, "text": "Aggiungere le gocce di cioccolato." },
+      { "step": 7, "text": "Disporre cucchiaiate colme di impasto sulle teglie preparate, distanziate di 5 cm." },
+      { "step": 8, "text": "Cuocere per 10-12 minuti fino a quando i bordi sono dorati ma i centri sembrano leggermente crudi.", "timer": 12 },
+      { "step": 9, "text": "Lasciare raffreddare sulla teglia per 5 minuti prima di trasferire su una griglia." }
+    ],
+    "categories": {
+      "cuisineType": ["american"],
+      "mealType": ["dessert", "snack"],
+      "dietaryRestrictions": ["vegetarian"],
+      "cookingTime": "quick"
+    },
+    "nutrition": {
+      "calories": 180,
+      "protein": 2,
+      "carbs": 24,
+      "fat": 9,
+      "allergens": ["wheat", "eggs", "dairy"]
+    },
+    "createdAt": "2026-03-10T00:00:00Z",
+    "updatedAt": "2026-03-10T00:00:00Z"
+  },
+  {
+    "id": "chicken-fajitas",
+    "title": "Fajitas di Pollo Sfrigolanti",
+    "description": "Pollo succoso marinato con peperoni e cipolle colorati serviti con tortillas calde. Perfette per una cena divertente e interattiva.",
+    "images": ["/images/recipes/fajitas-1.jpg", "/images/recipes/fajitas-2.jpg"],
+    "prepTime": 15,
+    "cookTime": 15,
+    "totalTime": 30,
+    "servings": 4,
+    "difficulty": "easy",
+    "ingredients": [
+      { "id": "1", "name": "petti di pollo", "quantity": 600, "unit": "g", "notes": "tagliati a strisce" },
+      { "id": "2", "name": "peperoni", "quantity": 3, "unit": "large", "notes": "affettati, colori misti" },
+      { "id": "3", "name": "cipolla", "quantity": 1, "unit": "large", "notes": "affettata" },
+      { "id": "4", "name": "succo di lime", "quantity": 3, "unit": "tbsp" },
+      { "id": "5", "name": "olio d'oliva", "quantity": 3, "unit": "tbsp" },
+      { "id": "6", "name": "chili in polvere", "quantity": 2, "unit": "tsp" },
+      { "id": "7", "name": "cumino", "quantity": 1, "unit": "tsp" },
+      { "id": "8", "name": "paprika", "quantity": 1, "unit": "tsp" },
+      { "id": "9", "name": "aglio in polvere", "quantity": 1, "unit": "tsp" },
+      { "id": "10", "name": "sale", "quantity": 1, "unit": "tsp" },
+      { "id": "11", "name": "tortillas di farina o mais", "quantity": 8, "unit": "medium" }
+    ],
+    "instructions": [
+      { "step": 1, "text": "In una ciotola, mescolare il succo di lime, 2 cucchiai di olio, il chili in polvere, il cumino, la paprika, l'aglio in polvere e il sale." },
+      { "step": 2, "text": "Aggiungere le strisce di pollo e marinare per 10 minuti.", "timer": 10 },
+      { "step": 3, "text": "Scaldare 1 cucchiaio di olio in una grande padella a fuoco alto." },
+      { "step": 4, "text": "Aggiungere il pollo e cuocere fino a doratura e cottura completa, circa 5-6 minuti. Togliere e mettere da parte." },
+      { "step": 5, "text": "Nella stessa padella, aggiungere i peperoni e le cipolle. Cuocere per 4-5 minuti fino a quando sono leggermente carbonizzati ma ancora croccanti." },
+      { "step": 6, "text": "Rimettere il pollo nella padella e mescolare con le verdure per 1 minuto." },
+      { "step": 7, "text": "Scaldare le tortillas e servire le fajitas con condimenti come panna acida, guacamole e salsa." }
+    ],
+    "categories": {
+      "cuisineType": ["mexican"],
+      "mealType": ["dinner"],
+      "dietaryRestrictions": [],
+      "cookingTime": "quick"
+    },
+    "nutrition": {
+      "calories": 420,
+      "protein": 38,
+      "carbs": 35,
+      "fat": 14,
+      "allergens": ["wheat"]
+    },
+    "createdAt": "2026-03-10T00:00:00Z",
+    "updatedAt": "2026-03-10T00:00:00Z"
+  },
+  {
+    "id": "greek-salad",
+    "title": "Insalata Greca Tradizionale",
+    "description": "Insalata mediterranea fresca e vibrante con pomodori, cetrioli, olive e formaggio feta. Leggera, salutare e ricca di sapore.",
+    "images": ["/images/recipes/greek-salad-1.jpg"],
+    "prepTime": 15,
+    "cookTime": 0,
+    "totalTime": 15,
+    "servings": 4,
+    "difficulty": "easy",
+    "ingredients": [
+      { "id": "1", "name": "pomodori", "quantity": 4, "unit": "large", "notes": "tagliati a spicchi" },
+      { "id": "2", "name": "cetriolo", "quantity": 1, "unit": "large", "notes": "affettato" },
+      { "id": "3", "name": "cipolla rossa", "quantity": 1, "unit": "small", "notes": "affettata sottilmente" },
+      { "id": "4", "name": "olive di Kalamata", "quantity": 100, "unit": "g" },
+      { "id": "5", "name": "formaggio feta", "quantity": 200, "unit": "g", "notes": "tagliato a cubetti" },
+      { "id": "6", "name": "olio extravergine d'oliva", "quantity": 4, "unit": "tbsp" },
+      { "id": "7", "name": "aceto di vino rosso", "quantity": 2, "unit": "tbsp" },
+      { "id": "8", "name": "origano secco", "quantity": 1, "unit": "tsp" },
+      { "id": "9", "name": "sale e pepe", "quantity": 1, "unit": "pinch" }
+    ],
+    "instructions": [
+      { "step": 1, "text": "In una grande ciotola, unire i pomodori, il cetriolo, la cipolla rossa e le olive." },
+      { "step": 2, "text": "In una piccola ciotola, sbattere insieme l'olio d'oliva, l'aceto di vino rosso, l'origano, il sale e il pepe." },
+      { "step": 3, "text": "Versare il condimento sulle verdure e mescolare delicatamente." },
+      { "step": 4, "text": "Completare con i cubetti di formaggio feta." },
+      { "step": 5, "text": "Lasciare riposare per 5 minuti per permettere ai sapori di amalgamarsi prima di servire." }
+    ],
+    "categories": {
+      "cuisineType": ["greek", "mediterranean", "european"],
+      "mealType": ["lunch", "dinner"],
+      "dietaryRestrictions": ["vegetarian"],
+      "cookingTime": "quick"
+    },
+    "nutrition": {
+      "calories": 280,
+      "protein": 8,
+      "carbs": 14,
+      "fat": 22,
+      "allergens": ["dairy"]
+    },
+    "createdAt": "2026-03-10T00:00:00Z",
+    "updatedAt": "2026-03-10T00:00:00Z"
+  },
+  {
+    "id": "beef-pho",
+    "title": "Pho Vietnamita con Manzo",
+    "description": "Zuppa di noodles vietnamita aromatica e profondamente saporita con manzo tenero, erbe fresche e un brodo ricco fatto sobbollire per ore.",
+    "images": ["/images/recipes/pho-1.jpg", "/images/recipes/pho-2.jpg"],
+    "prepTime": 30,
+    "cookTime": 180,
+    "totalTime": 210,
+    "servings": 6,
+    "difficulty": "hard",
+    "ingredients": [
+      { "id": "1", "name": "ossa di manzo", "quantity": 1.5, "unit": "kg", "notes": "ossa con nocche e midollo" },
+      { "id": "2", "name": "petto di manzo", "quantity": 500, "unit": "g" },
+      { "id": "3", "name": "cipolle", "quantity": 2, "unit": "large", "notes": "tagliate a metà" },
+      { "id": "4", "name": "zenzero", "quantity": 100, "unit": "g", "notes": "affettato" },
+      { "id": "5", "name": "anice stellato", "quantity": 4, "unit": "whole" },
+      { "id": "6", "name": "stecca di cannella", "quantity": 1, "unit": "large" },
+      { "id": "7", "name": "semi di coriandolo", "quantity": 1, "unit": "tbsp" },
+      { "id": "8", "name": "salsa di pesce", "quantity": 80, "unit": "ml" },
+      { "id": "9", "name": "zucchero di roccia", "quantity": 30, "unit": "g" },
+      { "id": "10", "name": "noodles di riso", "quantity": 400, "unit": "g", "notes": "banh pho" },
+      { "id": "11", "name": "controfiletto di manzo", "quantity": 300, "unit": "g", "notes": "affettato sottilmente per guarnire" },
+      { "id": "12", "name": "germogli di soia", "quantity": 200, "unit": "g" },
+      { "id": "13", "name": "basilico fresco", "quantity": 1, "unit": "bunch" },
+      { "id": "14", "name": "coriandolo", "quantity": 1, "unit": "bunch" },
+      { "id": "15", "name": "lime", "quantity": 2, "unit": "whole", "notes": "tagliato a spicchi" },
+      { "id": "16", "name": "salsa hoisin", "quantity": 4, "unit": "tbsp", "notes": "per servire" },
+      { "id": "17", "name": "sriracha", "quantity": 4, "unit": "tbsp", "notes": "per servire" }
+    ],
+    "instructions": [
+      { "step": 1, "text": "Sbollentare le ossa di manzo in acqua bollente per 5 minuti. Scolare e sciacquare per rimuovere le impurità." },
+      { "step": 2, "text": "Carbonizzare le cipolle e lo zenzero direttamente su una fiamma a gas o sotto il grill fino a quando sono anneriti." },
+      { "step": 3, "text": "Tostare l'anice stellato, la cannella e i semi di coriandolo in una padella asciutta per 2 minuti fino a quando diventano profumati." },
+      { "step": 4, "text": "Mettere le ossa, il petto, le cipolle carbonizzate, lo zenzero e le spezie tostate in una grande pentola. Coprire con 4 litri d'acqua.", "timer": 10 },
+      { "step": 5, "text": "Portare a ebollizione, poi ridurre il calore e far sobbollire delicatamente per 3 ore, schiumando regolarmente.", "timer": 180 },
+      { "step": 6, "text": "Togliere il petto dopo 90 minuti e lasciarlo raffreddare. Affettarlo sottilmente quando è pronto per servire." },
+      { "step": 7, "text": "Filtrare il brodo attraverso un colino a maglia fine. Condire con salsa di pesce e zucchero di roccia a piacere." },
+      { "step": 8, "text": "Cuocere i noodles di riso seguendo le indicazioni della confezione. Dividere tra le ciotole." },
+      { "step": 9, "text": "Guarnire i noodles con fette di petto e fette di controfiletto crudo." },
+      { "step": 10, "text": "Versare il brodo bollente nelle ciotole (il calore cuocerà il manzo crudo)." },
+      { "step": 11, "text": "Servire con germogli di soia, erbe fresche, spicchi di lime, salsa hoisin e sriracha a parte." }
+    ],
+    "categories": {
+      "cuisineType": ["vietnamese", "asian"],
+      "mealType": ["dinner", "lunch"],
+      "dietaryRestrictions": [],
+      "cookingTime": "long"
+    },
+    "nutrition": {
+      "calories": 520,
+      "protein": 42,
+      "carbs": 58,
+      "fat": 12,
+      "allergens": ["soy"]
+    },
+    "createdAt": "2026-03-10T00:00:00Z",
+    "updatedAt": "2026-03-10T00:00:00Z"
+  }
+]

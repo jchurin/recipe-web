@@ -2,6 +2,7 @@
 
 import { useFilters } from '@/lib/hooks/useFilters';
 import { useEffect } from 'react';
+import { useTranslations } from 'next-intl';
 import type { Categories } from '@/types/category';
 import { FilterChip } from './FilterChip';
 import { Button } from '@/components/common/Button';
@@ -13,6 +14,8 @@ export interface FilterBarProps {
 
 export function FilterBar({ categories, onFilterChange }: FilterBarProps) {
   const { filters, setFilter, clearFilters, activeFilterCount } = useFilters();
+  const t = useTranslations('filters');
+  const tDifficulty = useTranslations('difficulty');
 
   useEffect(() => {
     onFilterChange?.(activeFilterCount);
@@ -55,19 +58,19 @@ export function FilterBar({ categories, onFilterChange }: FilterBarProps) {
   };
 
   const difficultyLevels = [
-    { id: 'easy', label: 'Easy' },
-    { id: 'medium', label: 'Medium' },
-    { id: 'hard', label: 'Hard' },
+    { id: 'easy', label: tDifficulty('easy') },
+    { id: 'medium', label: tDifficulty('medium') },
+    { id: 'hard', label: tDifficulty('hard') },
   ];
 
   return (
     <div className="space-y-6 rounded-lg border border-gray-200 bg-white p-6 dark:border-gray-700 dark:bg-gray-800">
       {/* Header */}
       <div className="flex items-center justify-between">
-        <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100">Filters</h3>
+        <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100">{t('title')}</h3>
         {activeFilterCount > 0 && (
           <Button variant="ghost" size="sm" onClick={clearFilters}>
-            Clear all ({activeFilterCount})
+            {t('clearAll')} ({activeFilterCount})
           </Button>
         )}
       </div>
@@ -75,7 +78,7 @@ export function FilterBar({ categories, onFilterChange }: FilterBarProps) {
       {/* Cuisine Types */}
       <div>
         <h4 className="mb-3 text-sm font-medium text-gray-700 dark:text-gray-300">
-          Cuisine Type
+          {t('cuisineType')}
         </h4>
         <div className="flex flex-wrap gap-2">
           {categories.cuisineTypes.slice(0, 6).map((cuisine) => (
@@ -91,7 +94,7 @@ export function FilterBar({ categories, onFilterChange }: FilterBarProps) {
 
       {/* Meal Types */}
       <div>
-        <h4 className="mb-3 text-sm font-medium text-gray-700 dark:text-gray-300">Meal Type</h4>
+        <h4 className="mb-3 text-sm font-medium text-gray-700 dark:text-gray-300">{t('mealType')}</h4>
         <div className="flex flex-wrap gap-2">
           {categories.mealTypes.map((meal) => (
             <FilterChip
@@ -107,7 +110,7 @@ export function FilterBar({ categories, onFilterChange }: FilterBarProps) {
       {/* Dietary Restrictions */}
       <div>
         <h4 className="mb-3 text-sm font-medium text-gray-700 dark:text-gray-300">
-          Dietary Restrictions
+          {t('dietary')}
         </h4>
         <div className="flex flex-wrap gap-2">
           {categories.dietaryRestrictions.map((dietary) => (
@@ -124,7 +127,7 @@ export function FilterBar({ categories, onFilterChange }: FilterBarProps) {
       {/* Cooking Time */}
       <div>
         <h4 className="mb-3 text-sm font-medium text-gray-700 dark:text-gray-300">
-          Cooking Time
+          {t('cookingTime')}
         </h4>
         <div className="flex flex-wrap gap-2">
           {categories.cookingTimes.map((time) => (
@@ -141,7 +144,7 @@ export function FilterBar({ categories, onFilterChange }: FilterBarProps) {
       {/* Difficulty Level */}
       <div>
         <h4 className="mb-3 text-sm font-medium text-gray-700 dark:text-gray-300">
-          Difficulty Level
+          {t('difficulty')}
         </h4>
         <div className="flex flex-wrap gap-2">
           {difficultyLevels.map((level) => (

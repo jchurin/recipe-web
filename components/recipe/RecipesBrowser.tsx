@@ -1,6 +1,7 @@
 'use client';
 
 import { useMemo } from 'react';
+import { useTranslations } from 'next-intl';
 import { useFilters } from '@/lib/hooks/useFilters';
 import { FilterBar } from '@/components/filters/FilterBar';
 import { RecipeMasonry } from './RecipeMasonry';
@@ -14,6 +15,7 @@ export interface RecipesBrowserProps {
 
 export function RecipesBrowser({ recipes, categories }: RecipesBrowserProps) {
   const { filterRecipes } = useFilters();
+  const t = useTranslations('filters');
 
   const filteredRecipes = useMemo(() => {
     return filterRecipes(recipes);
@@ -29,9 +31,9 @@ export function RecipesBrowser({ recipes, categories }: RecipesBrowserProps) {
       {/* Recipe Grid */}
       <div>
         <div className="mb-4 text-sm text-gray-600 dark:text-gray-400">
-          Showing {filteredRecipes.length} of {recipes.length} recipes
+          {t('showing')} {filteredRecipes.length} {t('of')} {recipes.length} {t('recipes')}
         </div>
-        <RecipeMasonry recipes={filteredRecipes} emptyMessage="No recipes match your filters" />
+        <RecipeMasonry recipes={filteredRecipes} emptyMessage={t('recipes')} />
       </div>
     </div>
   );

@@ -1,3 +1,6 @@
+'use client';
+
+import { useTranslations } from 'next-intl';
 import type { Ingredient } from '@/types/recipe';
 
 export interface RecipeIngredientsProps {
@@ -5,10 +8,22 @@ export interface RecipeIngredientsProps {
 }
 
 export function RecipeIngredients({ ingredients }: RecipeIngredientsProps) {
+  const t = useTranslations('recipe');
+  const tUnits = useTranslations('units');
+
+  const translateUnit = (unit: string) => {
+    // Try to translate the unit, fallback to original if not found
+    try {
+      return tUnits(unit);
+    } catch {
+      return unit;
+    }
+  };
+
   return (
     <div className="rounded-lg border border-gray-200 bg-white p-4 dark:border-gray-700 dark:bg-gray-800">
       <h2 className="mb-3 text-xl font-semibold text-gray-900 dark:text-gray-100">
-        Ingredients
+        {t('ingredients')}
       </h2>
 
       <ul className="space-y-2">
@@ -20,7 +35,7 @@ export function RecipeIngredients({ ingredients }: RecipeIngredientsProps) {
             <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-primary-500" />
             <span>
               <span className="font-medium">
-                {ingredient.quantity} {ingredient.unit}
+                {ingredient.quantity} {translateUnit(ingredient.unit)}
               </span>{' '}
               {ingredient.name}
               {ingredient.notes && (

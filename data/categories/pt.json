@@ -1,0 +1,41 @@
+{
+  "cuisineTypes": [
+    { "id": "italian", "label": "Italiana", "icon": "🍝", "description": "Cozinha italiana clássica" },
+    { "id": "mexican", "label": "Mexicana", "icon": "🌮", "description": "Pratos tradicionais mexicanos" },
+    { "id": "asian", "label": "Asiática", "icon": "🍜", "description": "Cozinhas pan-asiáticas" },
+    { "id": "american", "label": "Americana", "icon": "🍔", "description": "Clássicos americanos" },
+    { "id": "thai", "label": "Tailandesa", "icon": "🌶️", "description": "Comida tailandesa autêntica" },
+    { "id": "chinese", "label": "Chinesa", "icon": "🥢", "description": "Cozinha chinesa" },
+    { "id": "greek", "label": "Grega", "icon": "🫒", "description": "Mediterrânea grega" },
+    { "id": "vietnamese", "label": "Vietnamita", "icon": "🍲", "description": "Especialidades vietnamitas" },
+    { "id": "mediterranean", "label": "Mediterrânea", "icon": "🐟", "description": "Sabores mediterrâneos" },
+    { "id": "european", "label": "Europeia", "icon": "🇪🇺", "description": "Cozinha europeia" }
+  ],
+  "mealTypes": [
+    { "id": "breakfast", "label": "Café da Manhã", "icon": "🍳", "description": "Refeições da manhã" },
+    { "id": "lunch", "label": "Almoço", "icon": "🥗", "description": "Refeições do meio-dia" },
+    { "id": "dinner", "label": "Jantar", "icon": "🍽️", "description": "Refeições da noite" },
+    { "id": "dessert", "label": "Sobremesa", "icon": "🍰", "description": "Doces" },
+    { "id": "snack", "label": "Lanche", "icon": "🍿", "description": "Lanches leves" }
+  ],
+  "dietaryRestrictions": [
+    { "id": "vegetarian", "label": "Vegetariano", "icon": "🥬", "description": "Sem carne ou peixe" },
+    { "id": "vegan", "label": "Vegano", "icon": "🌱", "description": "Sem produtos animais" },
+    { "id": "gluten-free", "label": "Sem Glúten", "icon": "🚫🌾", "description": "Sem grãos com glúten" },
+    { "id": "dairy-free", "label": "Sem Laticínios", "icon": "🚫🥛", "description": "Sem produtos lácteos" },
+    { "id": "keto", "label": "Keto", "icon": "🥑", "description": "Baixo carboidrato, alto gordura" }
+  ],
+  "cookingTimes": [
+    { "id": "quick", "label": "Rápido (<30 min)", "icon": "⚡", "maxMinutes": 30, "description": "Pronto em menos de 30 minutos" },
+    { "id": "medium", "label": "Médio (30-60 min)", "icon": "⏱️", "maxMinutes": 60, "description": "30 a 60 minutos" },
+    { "id": "long", "label": "Longo (>60 min)", "icon": "⏳", "description": "Mais de 60 minutos" }
+  ],
+  "allergens": [
+    { "id": "dairy", "label": "Laticínios", "icon": "🥛", "description": "Contém produtos lácteos" },
+    { "id": "wheat", "label": "Trigo/Glúten", "icon": "🌾", "description": "Contém trigo ou glúten" },
+    { "id": "nuts", "label": "Nozes", "icon": "🥜", "description": "Contém nozes ou amendoim" },
+    { "id": "soy", "label": "Soja", "icon": "🫘", "description": "Contém produtos de soja" },
+    { "id": "eggs", "label": "Ovos", "icon": "🥚", "description": "Contém ovos" },
+    { "id": "shellfish", "label": "Frutos do Mar", "icon": "🦐", "description": "Contém frutos do mar" }
+  ]
+}

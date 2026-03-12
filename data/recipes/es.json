@@ -1,0 +1,477 @@
+[
+  {
+    "id": "pasta-carbonara",
+    "title": "Pasta Carbonara Clásica",
+    "description": "Un plato de pasta italiano tradicional preparado con huevos, queso, panceta y pimienta negra. Cremoso y satisfactorio sin usar crema.",
+    "images": ["/images/recipes/carbonara-1.jpg", "/images/recipes/carbonara-2.jpg"],
+    "prepTime": 10,
+    "cookTime": 20,
+    "totalTime": 30,
+    "servings": 4,
+    "difficulty": "medium",
+    "ingredients": [
+      { "id": "1", "name": "espagueti", "quantity": 400, "unit": "g" },
+      { "id": "2", "name": "panceta", "quantity": 200, "unit": "g", "notes": "cortada en cubos" },
+      { "id": "3", "name": "huevos", "quantity": 4, "unit": "pieces" },
+      { "id": "4", "name": "queso Pecorino Romano", "quantity": 100, "unit": "g", "notes": "rallado" },
+      { "id": "5", "name": "pimienta negra", "quantity": 2, "unit": "tsp", "notes": "recién molida" },
+      { "id": "6", "name": "sal", "quantity": 1, "unit": "tsp" }
+    ],
+    "instructions": [
+      { "step": 1, "text": "Hierve una olla grande de agua con sal. Cocina el espagueti según las instrucciones del paquete hasta que esté al dente.", "timer": 10 },
+      { "step": 2, "text": "Mientras la pasta se cocina, dora la panceta en una sartén grande a fuego medio hasta que esté dorada, unos 5 minutos." },
+      { "step": 3, "text": "En un tazón, bate los huevos, el Pecorino Romano rallado y la pimienta negra." },
+      { "step": 4, "text": "Reserva 1 taza de agua de la pasta, luego escurre la pasta." },
+      { "step": 5, "text": "Agrega la pasta caliente a la sartén con la panceta. Retira del fuego." },
+      { "step": 6, "text": "Vierte rápidamente la mezcla de huevo, mezclando constantemente. Agrega agua de pasta según sea necesario para crear una salsa cremosa." },
+      { "step": 7, "text": "Sirve inmediatamente con queso y pimienta negra extra." }
+    ],
+    "categories": {
+      "cuisineType": ["italian", "european"],
+      "mealType": ["dinner", "lunch"],
+      "dietaryRestrictions": [],
+      "cookingTime": "quick"
+    },
+    "nutrition": {
+      "calories": 580,
+      "protein": 28,
+      "carbs": 65,
+      "fat": 22,
+      "allergens": ["wheat", "eggs", "dairy"]
+    },
+    "createdAt": "2026-03-10T00:00:00Z",
+    "updatedAt": "2026-03-10T00:00:00Z"
+  },
+  {
+    "id": "breakfast-tacos",
+    "title": "Tacos Mexicanos de Desayuno",
+    "description": "Tacos de desayuno rápidos y deliciosos cargados con huevos revueltos, queso, salsa y aguacate. Perfectos para mañanas ocupadas.",
+    "images": ["/images/recipes/breakfast-tacos-1.jpg"],
+    "prepTime": 5,
+    "cookTime": 10,
+    "totalTime": 15,
+    "servings": 2,
+    "difficulty": "easy",
+    "ingredients": [
+      { "id": "1", "name": "tortillas de harina pequeñas", "quantity": 4, "unit": "pieces" },
+      { "id": "2", "name": "huevos", "quantity": 4, "unit": "pieces" },
+      { "id": "3", "name": "queso cheddar", "quantity": 50, "unit": "g", "notes": "rallado" },
+      { "id": "4", "name": "aguacate mediano", "quantity": 1, "unit": "piece", "notes": "en rebanadas" },
+      { "id": "5", "name": "salsa", "quantity": 4, "unit": "tbsp" },
+      { "id": "6", "name": "mantequilla", "quantity": 1, "unit": "tbsp" },
+      { "id": "7", "name": "sal y pimienta", "quantity": 1, "unit": "pinch" }
+    ],
+    "instructions": [
+      { "step": 1, "text": "Bate los huevos con sal y pimienta en un tazón." },
+      { "step": 2, "text": "Derrite la mantequilla en una sartén antiadherente a fuego medio." },
+      { "step": 3, "text": "Vierte los huevos y revuélvelos suavemente hasta que estén listos, unos 3-4 minutos.", "timer": 4 },
+      { "step": 4, "text": "Calienta las tortillas en una sartén seca o en el microondas por 20 segundos." },
+      { "step": 5, "text": "Divide los huevos revueltos entre las tortillas." },
+      { "step": 6, "text": "Cubre con queso, rebanadas de aguacate y salsa. Dobla y sirve inmediatamente." }
+    ],
+    "categories": {
+      "cuisineType": ["mexican", "american"],
+      "mealType": ["breakfast"],
+      "dietaryRestrictions": ["vegetarian"],
+      "cookingTime": "quick"
+    },
+    "nutrition": {
+      "calories": 420,
+      "protein": 22,
+      "carbs": 32,
+      "fat": 23,
+      "allergens": ["wheat", "eggs", "dairy"]
+    },
+    "createdAt": "2026-03-10T00:00:00Z",
+    "updatedAt": "2026-03-10T00:00:00Z"
+  },
+  {
+    "id": "pad-thai",
+    "title": "Pad Thai Auténtico",
+    "description": "El plato de fideos más famoso de Tailandia con fideos de arroz, camarones, cacahuates y un perfecto equilibrio de sabores dulces, ácidos y salados.",
+    "images": ["/images/recipes/pad-thai-1.jpg", "/images/recipes/pad-thai-2.jpg"],
+    "prepTime": 20,
+    "cookTime": 15,
+    "totalTime": 35,
+    "servings": 4,
+    "difficulty": "medium",
+    "ingredients": [
+      { "id": "1", "name": "fideos de arroz", "quantity": 300, "unit": "g", "notes": "secos" },
+      { "id": "2", "name": "camarones", "quantity": 300, "unit": "g", "notes": "pelados y desvenados" },
+      { "id": "3", "name": "huevos", "quantity": 2, "unit": "pieces" },
+      { "id": "4", "name": "brotes de soya", "quantity": 150, "unit": "g" },
+      { "id": "5", "name": "cebolletas", "quantity": 4, "unit": "pieces", "notes": "picadas" },
+      { "id": "6", "name": "ajo", "quantity": 3, "unit": "cloves", "notes": "picado" },
+      { "id": "7", "name": "pasta de tamarindo", "quantity": 3, "unit": "tbsp" },
+      { "id": "8", "name": "salsa de pescado", "quantity": 3, "unit": "tbsp" },
+      { "id": "9", "name": "azúcar morena", "quantity": 2, "unit": "tbsp" },
+      { "id": "10", "name": "cacahuates", "quantity": 50, "unit": "g", "notes": "triturados" },
+      { "id": "11", "name": "limas", "quantity": 2, "unit": "pieces", "notes": "cortadas en gajos" },
+      { "id": "12", "name": "aceite vegetal", "quantity": 3, "unit": "tbsp" }
+    ],
+    "instructions": [
+      { "step": 1, "text": "Remoja los fideos de arroz en agua tibia por 30 minutos, luego escúrrelos.", "timer": 30 },
+      { "step": 2, "text": "Mezcla la pasta de tamarindo, salsa de pescado y azúcar morena en un tazón pequeño para hacer la salsa." },
+      { "step": 3, "text": "Calienta 2 cucharadas de aceite en un wok a fuego alto. Agrega los camarones y cocina hasta que estén rosados, unos 3 minutos. Retira y reserva." },
+      { "step": 4, "text": "Agrega el aceite restante al wok. Revuelve los huevos, rompiéndolos en pedazos pequeños." },
+      { "step": 5, "text": "Agrega el ajo y saltea por 30 segundos hasta que esté fragante." },
+      { "step": 6, "text": "Agrega los fideos escurridos y la salsa. Mezcla por 2-3 minutos hasta que los fideos estén tiernos." },
+      { "step": 7, "text": "Regresa los camarones al wok. Agrega los brotes de soya y las cebolletas. Mezcla por 1 minuto." },
+      { "step": 8, "text": "Sirve inmediatamente con cacahuates triturados y gajos de lima." }
+    ],
+    "categories": {
+      "cuisineType": ["thai", "asian"],
+      "mealType": ["dinner", "lunch"],
+      "dietaryRestrictions": [],
+      "cookingTime": "quick"
+    },
+    "nutrition": {
+      "calories": 485,
+      "protein": 26,
+      "carbs": 62,
+      "fat": 14,
+      "allergens": ["shellfish", "eggs", "nuts", "soy"]
+    },
+    "createdAt": "2026-03-10T00:00:00Z",
+    "updatedAt": "2026-03-10T00:00:00Z"
+  },
+  {
+    "id": "fluffy-pancakes",
+    "title": "Panqueques Esponjosos de Suero de Leche",
+    "description": "Panqueques ligeros, esponjosos y perfectamente dorados que son rápidos de hacer. El secreto está en el suero de leche y no mezclar demasiado la masa.",
+    "images": ["/images/recipes/pancakes-1.jpg"],
+    "prepTime": 5,
+    "cookTime": 15,
+    "totalTime": 20,
+    "servings": 4,
+    "difficulty": "easy",
+    "ingredients": [
+      { "id": "1", "name": "harina común", "quantity": 200, "unit": "g" },
+      { "id": "2", "name": "azúcar", "quantity": 2, "unit": "tbsp" },
+      { "id": "3", "name": "polvo de hornear", "quantity": 2, "unit": "tsp" },
+      { "id": "4", "name": "bicarbonato de sodio", "quantity": 0.5, "unit": "tsp" },
+      { "id": "5", "name": "sal", "quantity": 0.5, "unit": "tsp" },
+      { "id": "6", "name": "suero de leche", "quantity": 300, "unit": "ml" },
+      { "id": "7", "name": "huevo", "quantity": 1, "unit": "piece" },
+      { "id": "8", "name": "mantequilla derretida", "quantity": 3, "unit": "tbsp" },
+      { "id": "9", "name": "extracto de vainilla", "quantity": 1, "unit": "tsp" }
+    ],
+    "instructions": [
+      { "step": 1, "text": "En un tazón grande, mezcla la harina, azúcar, polvo de hornear, bicarbonato de sodio y sal." },
+      { "step": 2, "text": "En otro tazón, bate el suero de leche, huevo, mantequilla derretida y vainilla." },
+      { "step": 3, "text": "Vierte los ingredientes húmedos en los secos. Mezcla suavemente hasta que apenas se combinen. ¡Los grumos están bien!" },
+      { "step": 4, "text": "Calienta una plancha o sartén antiadherente a fuego medio. Engrasa ligeramente con mantequilla." },
+      { "step": 5, "text": "Vierte 1/4 de taza de masa para cada panqueque. Cocina hasta que se formen burbujas en la superficie, unos 2-3 minutos.", "timer": 3 },
+      { "step": 6, "text": "Voltea y cocina hasta que estén dorados, otros 2 minutos." },
+      { "step": 7, "text": "Sirve calientes con jarabe de arce, mantequilla y frutos rojos frescos." }
+    ],
+    "categories": {
+      "cuisineType": ["american"],
+      "mealType": ["breakfast"],
+      "dietaryRestrictions": ["vegetarian"],
+      "cookingTime": "quick"
+    },
+    "nutrition": {
+      "calories": 320,
+      "protein": 9,
+      "carbs": 48,
+      "fat": 11,
+      "allergens": ["wheat", "eggs", "dairy"]
+    },
+    "createdAt": "2026-03-10T00:00:00Z",
+    "updatedAt": "2026-03-10T00:00:00Z"
+  },
+  {
+    "id": "margherita-pizza",
+    "title": "Pizza Margherita",
+    "description": "Pizza italiana clásica con mozzarella fresca, tomates y albahaca. Ingredientes simples que resaltan la calidad y la tradición.",
+    "images": ["/images/recipes/margherita-1.jpg", "/images/recipes/margherita-2.jpg"],
+    "prepTime": 90,
+    "cookTime": 12,
+    "totalTime": 102,
+    "servings": 2,
+    "difficulty": "medium",
+    "ingredients": [
+      { "id": "1", "name": "masa de pizza", "quantity": 400, "unit": "g", "notes": "comprada o casera" },
+      { "id": "2", "name": "tomates triturados", "quantity": 200, "unit": "g" },
+      { "id": "3", "name": "mozzarella fresca", "quantity": 200, "unit": "g", "notes": "desgarrada en trozos" },
+      { "id": "4", "name": "hojas de albahaca fresca", "quantity": 15, "unit": "pieces" },
+      { "id": "5", "name": "aceite de oliva", "quantity": 3, "unit": "tbsp" },
+      { "id": "6", "name": "ajo", "quantity": 2, "unit": "cloves", "notes": "picado" },
+      { "id": "7", "name": "sal", "quantity": 1, "unit": "tsp" },
+      { "id": "8", "name": "orégano seco", "quantity": 1, "unit": "tsp" }
+    ],
+    "instructions": [
+      { "step": 1, "text": "Si usas masa comprada, déjala llegar a temperatura ambiente por 30 minutos.", "timer": 30 },
+      { "step": 2, "text": "Precalienta el horno a temperatura máxima (usualmente 260°C/500°F) con una piedra de pizza o bandeja dentro por 30 minutos." },
+      { "step": 3, "text": "Mezcla los tomates triturados con el ajo, orégano, sal y 1 cucharada de aceite de oliva." },
+      { "step": 4, "text": "Extiende la masa en dos círculos de 25 cm sobre una superficie enharinada." },
+      { "step": 5, "text": "Transfiere la masa a papel pergamino. Extiende la salsa de tomate, dejando un borde de 2.5 cm." },
+      { "step": 6, "text": "Agrega trozos de mozzarella uniformemente sobre la salsa." },
+      { "step": 7, "text": "Rocía con el aceite de oliva restante. Transfiere a la piedra caliente y hornea por 10-12 minutos hasta que la corteza esté dorada y el queso burbujeante.", "timer": 12 },
+      { "step": 8, "text": "Retira del horno e inmediatamente cubre con hojas de albahaca fresca. Corta y sirve." }
+    ],
+    "categories": {
+      "cuisineType": ["italian", "european"],
+      "mealType": ["dinner", "lunch"],
+      "dietaryRestrictions": ["vegetarian"],
+      "cookingTime": "medium"
+    },
+    "nutrition": {
+      "calories": 620,
+      "protein": 28,
+      "carbs": 72,
+      "fat": 24,
+      "allergens": ["wheat", "dairy"]
+    },
+    "createdAt": "2026-03-10T00:00:00Z",
+    "updatedAt": "2026-03-10T00:00:00Z"
+  },
+  {
+    "id": "vegetable-stir-fry",
+    "title": "Salteado de Vegetales Colorido",
+    "description": "Un salteado vegano vibrante y saludable lleno de vegetales crujientes en una salsa sabrosa. Rápido, fácil y personalizable.",
+    "images": ["/images/recipes/stir-fry-1.jpg"],
+    "prepTime": 15,
+    "cookTime": 10,
+    "totalTime": 25,
+    "servings": 4,
+    "difficulty": "easy",
+    "ingredients": [
+      { "id": "1", "name": "floretes de brócoli", "quantity": 200, "unit": "g" },
+      { "id": "2", "name": "pimientos morrones medianos", "quantity": 2, "unit": "pieces", "notes": "en rebanadas, colores variados" },
+      { "id": "3", "name": "zanahorias medianas", "quantity": 2, "unit": "pieces", "notes": "en juliana" },
+      { "id": "4", "name": "chícharos chinos", "quantity": 150, "unit": "g" },
+      { "id": "5", "name": "champiñones", "quantity": 150, "unit": "g", "notes": "en rebanadas" },
+      { "id": "6", "name": "ajo", "quantity": 4, "unit": "cloves", "notes": "picado" },
+      { "id": "7", "name": "jengibre rallado", "quantity": 1, "unit": "tbsp" },
+      { "id": "8", "name": "salsa de soya", "quantity": 3, "unit": "tbsp" },
+      { "id": "9", "name": "aceite de sésamo", "quantity": 2, "unit": "tsp" },
+      { "id": "10", "name": "maicena", "quantity": 1, "unit": "tsp" },
+      { "id": "11", "name": "aceite vegetal", "quantity": 2, "unit": "tbsp" },
+      { "id": "12", "name": "semillas de sésamo", "quantity": 1, "unit": "tbsp", "notes": "para decorar" }
+    ],
+    "instructions": [
+      { "step": 1, "text": "Mezcla la salsa de soya, aceite de sésamo, maicena y 2 cucharadas de agua en un tazón pequeño para hacer la salsa." },
+      { "step": 2, "text": "Calienta el aceite vegetal en un wok o sartén grande a fuego alto." },
+      { "step": 3, "text": "Agrega el ajo y jengibre, saltea por 30 segundos hasta que esté fragante." },
+      { "step": 4, "text": "Agrega el brócoli y las zanahorias. Saltea por 3 minutos." },
+      { "step": 5, "text": "Agrega los pimientos, chícharos chinos y champiñones. Continúa salteando por 3-4 minutos hasta que los vegetales estén tiernos pero crujientes." },
+      { "step": 6, "text": "Vierte la salsa y mezcla todo por 1 minuto hasta que los vegetales estén cubiertos y la salsa espese." },
+      { "step": 7, "text": "Decora con semillas de sésamo. Sirve inmediatamente sobre arroz o fideos." }
+    ],
+    "categories": {
+      "cuisineType": ["asian", "chinese"],
+      "mealType": ["dinner", "lunch"],
+      "dietaryRestrictions": ["vegan", "vegetarian"],
+      "cookingTime": "quick"
+    },
+    "nutrition": {
+      "calories": 180,
+      "protein": 6,
+      "carbs": 22,
+      "fat": 8,
+      "allergens": ["soy"]
+    },
+    "createdAt": "2026-03-10T00:00:00Z",
+    "updatedAt": "2026-03-10T00:00:00Z"
+  },
+  {
+    "id": "chocolate-chip-cookies",
+    "title": "Galletas Perfectas con Chispas de Chocolate",
+    "description": "Bordes crujientes con centros suaves cargados de chispas de chocolate. La galleta clásica definitiva que nunca pasa de moda.",
+    "images": ["/images/recipes/cookies-1.jpg"],
+    "prepTime": 15,
+    "cookTime": 12,
+    "totalTime": 27,
+    "servings": 24,
+    "difficulty": "easy",
+    "ingredients": [
+      { "id": "1", "name": "harina común", "quantity": 280, "unit": "g" },
+      { "id": "2", "name": "bicarbonato de sodio", "quantity": 1, "unit": "tsp" },
+      { "id": "3", "name": "sal", "quantity": 1, "unit": "tsp" },
+      { "id": "4", "name": "mantequilla sin sal", "quantity": 225, "unit": "g", "notes": "ablandada" },
+      { "id": "5", "name": "azúcar morena", "quantity": 150, "unit": "g", "notes": "compacta" },
+      { "id": "6", "name": "azúcar granulada", "quantity": 100, "unit": "g" },
+      { "id": "7", "name": "huevos", "quantity": 2, "unit": "pieces" },
+      { "id": "8", "name": "extracto de vainilla", "quantity": 2, "unit": "tsp" },
+      { "id": "9", "name": "chispas de chocolate", "quantity": 340, "unit": "g" }
+    ],
+    "instructions": [
+      { "step": 1, "text": "Precalienta el horno a 190°C (375°F). Cubre bandejas para hornear con papel pergamino." },
+      { "step": 2, "text": "Bate la harina, bicarbonato de sodio y sal en un tazón." },
+      { "step": 3, "text": "En un tazón grande, bate la mantequilla y ambos azúcares hasta que esté ligero y esponjoso, unos 3 minutos." },
+      { "step": 4, "text": "Incorpora los huevos uno a la vez, luego agrega el extracto de vainilla." },
+      { "step": 5, "text": "Mezcla gradualmente la mezcla de harina hasta que apenas se combine." },
+      { "step": 6, "text": "Incorpora las chispas de chocolate." },
+      { "step": 7, "text": "Deja caer cucharadas colmadas de masa en las bandejas preparadas, dejando 5 cm de espacio." },
+      { "step": 8, "text": "Hornea por 10-12 minutos hasta que los bordes estén dorados pero los centros se vean ligeramente crudos.", "timer": 12 },
+      { "step": 9, "text": "Deja enfriar en la bandeja por 5 minutos antes de transferir a una rejilla." }
+    ],
+    "categories": {
+      "cuisineType": ["american"],
+      "mealType": ["dessert", "snack"],
+      "dietaryRestrictions": ["vegetarian"],
+      "cookingTime": "quick"
+    },
+    "nutrition": {
+      "calories": 180,
+      "protein": 2,
+      "carbs": 24,
+      "fat": 9,
+      "allergens": ["wheat", "eggs", "dairy"]
+    },
+    "createdAt": "2026-03-10T00:00:00Z",
+    "updatedAt": "2026-03-10T00:00:00Z"
+  },
+  {
+    "id": "chicken-fajitas",
+    "title": "Fajitas de Pollo Chispeantes",
+    "description": "Pollo jugoso marinado con pimientos y cebollas coloridos servido con tortillas calientes. Perfecto para una cena divertida e interactiva.",
+    "images": ["/images/recipes/fajitas-1.jpg", "/images/recipes/fajitas-2.jpg"],
+    "prepTime": 15,
+    "cookTime": 15,
+    "totalTime": 30,
+    "servings": 4,
+    "difficulty": "easy",
+    "ingredients": [
+      { "id": "1", "name": "pechugas de pollo", "quantity": 600, "unit": "g", "notes": "cortadas en tiras" },
+      { "id": "2", "name": "pimientos morrones grandes", "quantity": 3, "unit": "pieces", "notes": "en rebanadas, colores variados" },
+      { "id": "3", "name": "cebolla grande", "quantity": 1, "unit": "piece", "notes": "en rebanadas" },
+      { "id": "4", "name": "jugo de lima", "quantity": 3, "unit": "tbsp" },
+      { "id": "5", "name": "aceite de oliva", "quantity": 3, "unit": "tbsp" },
+      { "id": "6", "name": "chile en polvo", "quantity": 2, "unit": "tsp" },
+      { "id": "7", "name": "comino", "quantity": 1, "unit": "tsp" },
+      { "id": "8", "name": "pimentón", "quantity": 1, "unit": "tsp" },
+      { "id": "9", "name": "ajo en polvo", "quantity": 1, "unit": "tsp" },
+      { "id": "10", "name": "sal", "quantity": 1, "unit": "tsp" },
+      { "id": "11", "name": "tortillas de harina o maíz medianas", "quantity": 8, "unit": "pieces" }
+    ],
+    "instructions": [
+      { "step": 1, "text": "En un tazón, mezcla el jugo de lima, 2 cucharadas de aceite, chile en polvo, comino, pimentón, ajo en polvo y sal." },
+      { "step": 2, "text": "Agrega las tiras de pollo y marina por 10 minutos.", "timer": 10 },
+      { "step": 3, "text": "Calienta 1 cucharada de aceite en una sartén grande a fuego alto." },
+      { "step": 4, "text": "Agrega el pollo y cocina hasta que esté dorado y bien cocido, unos 5-6 minutos. Retira y reserva." },
+      { "step": 5, "text": "En la misma sartén, agrega los pimientos y cebollas. Cocina por 4-5 minutos hasta que estén ligeramente chamuscados pero aún crujientes." },
+      { "step": 6, "text": "Regresa el pollo a la sartén y mezcla con los vegetales por 1 minuto." },
+      { "step": 7, "text": "Calienta las tortillas y sirve las fajitas con acompañamientos como crema agria, guacamole y salsa." }
+    ],
+    "categories": {
+      "cuisineType": ["mexican"],
+      "mealType": ["dinner"],
+      "dietaryRestrictions": [],
+      "cookingTime": "quick"
+    },
+    "nutrition": {
+      "calories": 420,
+      "protein": 38,
+      "carbs": 35,
+      "fat": 14,
+      "allergens": ["wheat"]
+    },
+    "createdAt": "2026-03-10T00:00:00Z",
+    "updatedAt": "2026-03-10T00:00:00Z"
+  },
+  {
+    "id": "greek-salad",
+    "title": "Ensalada Griega Tradicional",
+    "description": "Ensalada mediterránea fresca y vibrante con tomates, pepinos, aceitunas y queso feta. Ligera, saludable y llena de sabor.",
+    "images": ["/images/recipes/greek-salad-1.jpg"],
+    "prepTime": 15,
+    "cookTime": 0,
+    "totalTime": 15,
+    "servings": 4,
+    "difficulty": "easy",
+    "ingredients": [
+      { "id": "1", "name": "tomates grandes", "quantity": 4, "unit": "pieces", "notes": "cortados en gajos" },
+      { "id": "2", "name": "pepino grande", "quantity": 1, "unit": "piece", "notes": "en rebanadas" },
+      { "id": "3", "name": "cebolla morada pequeña", "quantity": 1, "unit": "piece", "notes": "en rebanadas finas" },
+      { "id": "4", "name": "aceitunas Kalamata", "quantity": 100, "unit": "g" },
+      { "id": "5", "name": "queso feta", "quantity": 200, "unit": "g", "notes": "en cubos" },
+      { "id": "6", "name": "aceite de oliva extra virgen", "quantity": 4, "unit": "tbsp" },
+      { "id": "7", "name": "vinagre de vino tinto", "quantity": 2, "unit": "tbsp" },
+      { "id": "8", "name": "orégano seco", "quantity": 1, "unit": "tsp" },
+      { "id": "9", "name": "sal y pimienta", "quantity": 1, "unit": "pinch" }
+    ],
+    "instructions": [
+      { "step": 1, "text": "En un tazón grande, combina los tomates, pepino, cebolla morada y aceitunas." },
+      { "step": 2, "text": "En un tazón pequeño, bate el aceite de oliva, vinagre de vino tinto, orégano, sal y pimienta." },
+      { "step": 3, "text": "Vierte el aderezo sobre los vegetales y mezcla suavemente." },
+      { "step": 4, "text": "Cubre con cubos de queso feta." },
+      { "step": 5, "text": "Deja reposar por 5 minutos para que los sabores se mezclen antes de servir." }
+    ],
+    "categories": {
+      "cuisineType": ["greek", "mediterranean", "european"],
+      "mealType": ["lunch", "dinner"],
+      "dietaryRestrictions": ["vegetarian"],
+      "cookingTime": "quick"
+    },
+    "nutrition": {
+      "calories": 280,
+      "protein": 8,
+      "carbs": 14,
+      "fat": 22,
+      "allergens": ["dairy"]
+    },
+    "createdAt": "2026-03-10T00:00:00Z",
+    "updatedAt": "2026-03-10T00:00:00Z"
+  },
+  {
+    "id": "beef-pho",
+    "title": "Pho de Res Vietnamita",
+    "description": "Sopa de fideos vietnamita aromática y profundamente sabrosa con carne tierna, hierbas frescas y un caldo rico que ha sido hervido a fuego lento por horas.",
+    "images": ["/images/recipes/pho-1.jpg", "/images/recipes/pho-2.jpg"],
+    "prepTime": 30,
+    "cookTime": 180,
+    "totalTime": 210,
+    "servings": 6,
+    "difficulty": "hard",
+    "ingredients": [
+      { "id": "1", "name": "huesos de res", "quantity": 1.5, "unit": "kg", "notes": "huesos de nudillo y tuétano" },
+      { "id": "2", "name": "pecho de res", "quantity": 500, "unit": "g" },
+      { "id": "3", "name": "cebollas grandes", "quantity": 2, "unit": "pieces", "notes": "partidas a la mitad" },
+      { "id": "4", "name": "jengibre", "quantity": 100, "unit": "g", "notes": "en rebanadas" },
+      { "id": "5", "name": "anís estrellado", "quantity": 4, "unit": "pieces" },
+      { "id": "6", "name": "rama de canela", "quantity": 1, "unit": "piece" },
+      { "id": "7", "name": "semillas de cilantro", "quantity": 1, "unit": "tbsp" },
+      { "id": "8", "name": "salsa de pescado", "quantity": 80, "unit": "ml" },
+      { "id": "9", "name": "azúcar de roca", "quantity": 30, "unit": "g" },
+      { "id": "10", "name": "fideos de arroz banh pho", "quantity": 400, "unit": "g" },
+      { "id": "11", "name": "solomillo de res", "quantity": 300, "unit": "g", "notes": "en rebanadas finas para cubrir" },
+      { "id": "12", "name": "brotes de soya", "quantity": 200, "unit": "g" },
+      { "id": "13", "name": "albahaca fresca", "quantity": 1, "unit": "piece", "notes": "manojo" },
+      { "id": "14", "name": "cilantro", "quantity": 1, "unit": "piece", "notes": "manojo" },
+      { "id": "15", "name": "limas", "quantity": 2, "unit": "pieces", "notes": "cortadas en gajos" },
+      { "id": "16", "name": "salsa hoisin", "quantity": 4, "unit": "tbsp", "notes": "para servir" },
+      { "id": "17", "name": "sriracha", "quantity": 4, "unit": "tbsp", "notes": "para servir" }
+    ],
+    "instructions": [
+      { "step": 1, "text": "Hierve los huesos de res en agua hirviendo por 5 minutos. Escurre y enjuaga para eliminar impurezas." },
+      { "step": 2, "text": "Carboniza las cebollas y el jengibre directamente sobre una llama de gas o bajo un asador hasta que estén ennegrecidos." },
+      { "step": 3, "text": "Tuesta el anís estrellado, canela y semillas de cilantro en una sartén seca por 2 minutos hasta que esté fragante." },
+      { "step": 4, "text": "Coloca los huesos, pecho, cebollas carbonizadas, jengibre y especias tostadas en una olla grande. Cubre con 4 litros de agua.", "timer": 10 },
+      { "step": 5, "text": "Lleva a ebullición, luego reduce el fuego y hierve suavemente por 3 horas, quitando la espuma regularmente.", "timer": 180 },
+      { "step": 6, "text": "Retira el pecho después de 90 minutos y deja enfriar. Rebana finamente cuando esté listo para servir." },
+      { "step": 7, "text": "Cuela el caldo a través de un colador de malla fina. Sazona con salsa de pescado y azúcar de roca al gusto." },
+      { "step": 8, "text": "Cocina los fideos de arroz según las instrucciones del paquete. Divide entre los tazones." },
+      { "step": 9, "text": "Cubre los fideos con rebanadas de pecho y rebanadas de solomillo crudo." },
+      { "step": 10, "text": "Vierte el caldo caliente sobre los tazones (el calor cocinará la carne cruda)." },
+      { "step": 11, "text": "Sirve con brotes de soya, hierbas frescas, gajos de lima, salsa hoisin y sriracha a un lado." }
+    ],
+    "categories": {
+      "cuisineType": ["vietnamese", "asian"],
+      "mealType": ["dinner", "lunch"],
+      "dietaryRestrictions": [],
+      "cookingTime": "long"
+    },
+    "nutrition": {
+      "calories": 520,
+      "protein": 42,
+      "carbs": 58,
+      "fat": 12,
+      "allergens": ["soy"]
+    },
+    "createdAt": "2026-03-10T00:00:00Z",
+    "updatedAt": "2026-03-10T00:00:00Z"
+  }
+]

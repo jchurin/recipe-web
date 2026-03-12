@@ -1,0 +1,129 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "recipes": "Recetas",
+    "favorites": "Favoritos"
+  },
+  "common": {
+    "search": "Buscar",
+    "searchPlaceholder": "Buscar recetas...",
+    "filter": "Filtrar",
+    "filters": "Filtros",
+    "share": "Compartir",
+    "copyLink": "Copiar Enlace",
+    "whatsapp": "WhatsApp",
+    "copied": "¡Copiado!",
+    "loading": "Cargando...",
+    "error": "Error",
+    "close": "Cerrar",
+    "cancel": "Cancelar",
+    "save": "Guardar",
+    "saved": "Guardado",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "add": "Agregar",
+    "remove": "Quitar",
+    "clear": "Limpiar",
+    "clearAll": "Limpiar todo",
+    "showMore": "Mostrar más",
+    "showLess": "Mostrar menos",
+    "of": "de"
+  },
+  "filters": {
+    "title": "Filtros",
+    "clearAll": "Limpiar todo",
+    "cuisineType": "Tipo de Cocina",
+    "mealType": "Tipo de Comida",
+    "dietary": "Restricciones Dietéticas",
+    "cookingTime": "Tiempo de Cocción",
+    "difficulty": "Nivel de Dificultad",
+    "showing": "Mostrando",
+    "of": "de",
+    "recipes": "recetas"
+  },
+  "difficulty": {
+    "easy": "Fácil",
+    "medium": "Medio",
+    "hard": "Difícil"
+  },
+  "recipe": {
+    "ingredients": "Ingredientes",
+    "instructions": "Instrucciones",
+    "nutrition": "Nutrición",
+    "nutritionInfo": "Información Nutricional",
+    "servings": "Porciones",
+    "serving": "porción",
+    "prepTime": "Prep",
+    "cookTime": "Cocción",
+    "totalTime": "Total",
+    "difficulty": "Dificultad",
+    "calories": "Calorías",
+    "protein": "Proteína",
+    "carbs": "Carbohidratos",
+    "fat": "Grasa",
+    "allergens": "Alérgenos",
+    "noAllergens": "Sin alérgenos comunes",
+    "addToFavorites": "Agregar a favoritos",
+    "removeFromFavorites": "Quitar de favoritos",
+    "shareOnWhatsApp": "Compartir en WhatsApp",
+    "backToRecipes": "Volver a Recetas"
+  },
+  "units": {
+    "g": "g",
+    "kg": "kg",
+    "ml": "ml",
+    "l": "l",
+    "tsp": "cdta",
+    "tbsp": "cda",
+    "cup": "taza",
+    "cups": "tazas",
+    "oz": "oz",
+    "lb": "lb",
+    "piece": "pieza",
+    "pieces": "piezas",
+    "clove": "diente",
+    "cloves": "dientes",
+    "pinch": "pizca"
+  },
+  "home": {
+    "title": "Descubre Recetas Deliciosas",
+    "subtitle": "Busca en nuestra colección de recetas",
+    "searchPlaceholder": "Buscar por título, ingrediente o cocina...",
+    "recentRecipes": "Recetas Recientes",
+    "popularRecipes": "Recetas Populares"
+  },
+  "recipesPage": {
+    "title": "Explorar Recetas",
+    "description": "Explora nuestra colección de recetas"
+  },
+  "favoritesPage": {
+    "title": "Mis Favoritos",
+    "description": "Tus recetas guardadas",
+    "empty": "Aún no tienes recetas favoritas",
+    "emptyDescription": "Comienza agregando recetas a tus favoritos haciendo clic en el icono del corazón"
+  },
+  "searchResults": {
+    "noResults": "No se encontraron recetas",
+    "noResultsDescription": "Intenta ajustar tu búsqueda o filtros",
+    "resultsCount": "{count} recetas encontradas"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados",
+    "madeWith": "Hecho con",
+    "by": "por"
+  },
+  "metadata": {
+    "home": {
+      "title": "Recipe Hub - Descubre Recetas Deliciosas",
+      "description": "Navega, busca y guarda tus recetas favoritas. Desde comidas rápidas hasta platos gourmet."
+    },
+    "recipes": {
+      "title": "Explorar Recetas | Recipe Hub",
+      "description": "Explora nuestra colección de recetas deliciosas. Filtra por cocina, tipo de comida y preferencias dietéticas."
+    },
+    "favorites": {
+      "title": "Mis Favoritos | Recipe Hub",
+      "description": "Tus recetas favoritas guardadas en un solo lugar."
+    }
+  }
+}

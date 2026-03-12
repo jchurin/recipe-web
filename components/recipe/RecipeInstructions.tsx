@@ -1,3 +1,6 @@
+'use client';
+
+import { useTranslations } from 'next-intl';
 import type { Instruction } from '@/types/recipe';
 import { formatTime } from '@/lib/utils/format';
 
@@ -6,10 +9,12 @@ export interface RecipeInstructionsProps {
 }
 
 export function RecipeInstructions({ instructions }: RecipeInstructionsProps) {
+  const t = useTranslations('recipe');
+
   return (
     <div className="rounded-lg border border-gray-200 bg-white p-4 dark:border-gray-700 dark:bg-gray-800">
       <h2 className="mb-3 text-xl font-semibold text-gray-900 dark:text-gray-100">
-        Instructions
+        {t('instructions')}
       </h2>
 
       <ol className="space-y-4">

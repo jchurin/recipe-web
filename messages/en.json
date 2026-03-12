@@ -1,0 +1,129 @@
+{
+  "nav": {
+    "home": "Home",
+    "recipes": "Recipes",
+    "favorites": "Favorites"
+  },
+  "common": {
+    "search": "Search",
+    "searchPlaceholder": "Search recipes...",
+    "filter": "Filter",
+    "filters": "Filters",
+    "share": "Share",
+    "copyLink": "Copy Link",
+    "whatsapp": "WhatsApp",
+    "copied": "Copied!",
+    "loading": "Loading...",
+    "error": "Error",
+    "close": "Close",
+    "cancel": "Cancel",
+    "save": "Save",
+    "saved": "Saved",
+    "delete": "Delete",
+    "edit": "Edit",
+    "add": "Add",
+    "remove": "Remove",
+    "clear": "Clear",
+    "clearAll": "Clear all",
+    "showMore": "Show more",
+    "showLess": "Show less",
+    "of": "of"
+  },
+  "filters": {
+    "title": "Filters",
+    "clearAll": "Clear all",
+    "cuisineType": "Cuisine Type",
+    "mealType": "Meal Type",
+    "dietary": "Dietary Restrictions",
+    "cookingTime": "Cooking Time",
+    "difficulty": "Difficulty Level",
+    "showing": "Showing",
+    "of": "of",
+    "recipes": "recipes"
+  },
+  "difficulty": {
+    "easy": "Easy",
+    "medium": "Medium",
+    "hard": "Hard"
+  },
+  "recipe": {
+    "ingredients": "Ingredients",
+    "instructions": "Instructions",
+    "nutrition": "Nutrition",
+    "nutritionInfo": "Nutrition Information",
+    "servings": "Servings",
+    "serving": "serving",
+    "prepTime": "Prep",
+    "cookTime": "Cook",
+    "totalTime": "Total",
+    "difficulty": "Difficulty",
+    "calories": "Calories",
+    "protein": "Protein",
+    "carbs": "Carbs",
+    "fat": "Fat",
+    "allergens": "Allergens",
+    "noAllergens": "No common allergens",
+    "addToFavorites": "Add to favorites",
+    "removeFromFavorites": "Remove from favorites",
+    "shareOnWhatsApp": "Share on WhatsApp",
+    "backToRecipes": "Back to Recipes"
+  },
+  "units": {
+    "g": "g",
+    "kg": "kg",
+    "ml": "ml",
+    "l": "l",
+    "tsp": "tsp",
+    "tbsp": "tbsp",
+    "cup": "cup",
+    "cups": "cups",
+    "oz": "oz",
+    "lb": "lb",
+    "piece": "piece",
+    "pieces": "pieces",
+    "clove": "clove",
+    "cloves": "cloves",
+    "pinch": "pinch"
+  },
+  "home": {
+    "title": "Discover Delicious Recipes",
+    "subtitle": "Search through our collection of recipes",
+    "searchPlaceholder": "Search by title, ingredient, or cuisine...",
+    "recentRecipes": "Recent Recipes",
+    "popularRecipes": "Popular Recipes"
+  },
+  "recipesPage": {
+    "title": "Browse Recipes",
+    "description": "Explore our collection of recipes"
+  },
+  "favoritesPage": {
+    "title": "My Favorites",
+    "description": "Your saved recipes",
+    "empty": "No favorite recipes yet",
+    "emptyDescription": "Start adding recipes to your favorites by clicking the heart icon"
+  },
+  "searchResults": {
+    "noResults": "No recipes found",
+    "noResultsDescription": "Try adjusting your search or filters",
+    "resultsCount": "{count} recipes found"
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "madeWith": "Made with",
+    "by": "by"
+  },
+  "metadata": {
+    "home": {
+      "title": "Recipe Hub - Discover Delicious Recipes",
+      "description": "Browse, search, and save your favorite recipes. From quick meals to gourmet dishes."
+    },
+    "recipes": {
+      "title": "Browse Recipes | Recipe Hub",
+      "description": "Browse our collection of delicious recipes. Filter by cuisine, meal type, and dietary preferences."
+    },
+    "favorites": {
+      "title": "My Favorites | Recipe Hub",
+      "description": "Your saved favorite recipes in one place."
+    }
+  }
+}

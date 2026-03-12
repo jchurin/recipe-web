@@ -1,0 +1,477 @@
+[
+  {
+    "id": "pasta-carbonara",
+    "title": "Pasta Carbonara Clássica",
+    "description": "Um prato de massa tradicional italiano feito com ovos, queijo, pancetta e pimenta-do-reino. Cremoso e satisfatório sem usar creme de leite.",
+    "images": ["/images/recipes/carbonara-1.jpg", "/images/recipes/carbonara-2.jpg"],
+    "prepTime": 10,
+    "cookTime": 20,
+    "totalTime": 30,
+    "servings": 4,
+    "difficulty": "medium",
+    "ingredients": [
+      { "id": "1", "name": "espaguete", "quantity": 400, "unit": "g" },
+      { "id": "2", "name": "pancetta", "quantity": 200, "unit": "g", "notes": "em cubos" },
+      { "id": "3", "name": "ovos", "quantity": 4, "unit": "large" },
+      { "id": "4", "name": "queijo Pecorino Romano", "quantity": 100, "unit": "g", "notes": "ralado" },
+      { "id": "5", "name": "pimenta-do-reino", "quantity": 2, "unit": "tsp", "notes": "moída na hora" },
+      { "id": "6", "name": "sal", "quantity": 1, "unit": "tsp" }
+    ],
+    "instructions": [
+      { "step": 1, "text": "Leve uma panela grande de água salgada para ferver. Cozinhe o espaguete conforme as instruções da embalagem até ficar al dente.", "timer": 10 },
+      { "step": 2, "text": "Enquanto a massa cozinha, doure a pancetta em uma frigideira grande em fogo médio até ficar dourada, cerca de 5 minutos." },
+      { "step": 3, "text": "Em uma tigela, bata os ovos, o Pecorino Romano ralado e a pimenta-do-reino." },
+      { "step": 4, "text": "Reserve 1 xícara da água da massa e escorra a massa." },
+      { "step": 5, "text": "Adicione a massa quente à frigideira com a pancetta. Retire do fogo." },
+      { "step": 6, "text": "Despeje rapidamente a mistura de ovos, mexendo constantemente. Adicione água da massa conforme necessário para criar um molho cremoso." },
+      { "step": 7, "text": "Sirva imediatamente com queijo extra e pimenta-do-reino." }
+    ],
+    "categories": {
+      "cuisineType": ["italian", "european"],
+      "mealType": ["dinner", "lunch"],
+      "dietaryRestrictions": [],
+      "cookingTime": "quick"
+    },
+    "nutrition": {
+      "calories": 580,
+      "protein": 28,
+      "carbs": 65,
+      "fat": 22,
+      "allergens": ["wheat", "eggs", "dairy"]
+    },
+    "createdAt": "2026-03-10T00:00:00Z",
+    "updatedAt": "2026-03-10T00:00:00Z"
+  },
+  {
+    "id": "breakfast-tacos",
+    "title": "Tacos Mexicanos de Café da Manhã",
+    "description": "Tacos deliciosos e rápidos de café da manhã recheados com ovos mexidos, queijo, salsa e abacate. Perfeitos para manhãs corridas.",
+    "images": ["/images/recipes/breakfast-tacos-1.jpg"],
+    "prepTime": 5,
+    "cookTime": 10,
+    "totalTime": 15,
+    "servings": 2,
+    "difficulty": "easy",
+    "ingredients": [
+      { "id": "1", "name": "tortilhas de trigo", "quantity": 4, "unit": "small" },
+      { "id": "2", "name": "ovos", "quantity": 4, "unit": "large" },
+      { "id": "3", "name": "queijo cheddar", "quantity": 50, "unit": "g", "notes": "ralado" },
+      { "id": "4", "name": "abacate", "quantity": 1, "unit": "medium", "notes": "fatiado" },
+      { "id": "5", "name": "salsa", "quantity": 4, "unit": "tbsp" },
+      { "id": "6", "name": "manteiga", "quantity": 1, "unit": "tbsp" },
+      { "id": "7", "name": "sal e pimenta", "quantity": 1, "unit": "pinch" }
+    ],
+    "instructions": [
+      { "step": 1, "text": "Bata os ovos com sal e pimenta em uma tigela." },
+      { "step": 2, "text": "Derreta a manteiga em uma frigideira antiaderente em fogo médio." },
+      { "step": 3, "text": "Despeje os ovos e mexa delicadamente até ficarem no ponto, cerca de 3-4 minutos.", "timer": 4 },
+      { "step": 4, "text": "Aqueça as tortilhas em uma frigideira seca ou no micro-ondas por 20 segundos." },
+      { "step": 5, "text": "Distribua os ovos mexidos entre as tortilhas." },
+      { "step": 6, "text": "Cubra com queijo, fatias de abacate e salsa. Dobre e sirva imediatamente." }
+    ],
+    "categories": {
+      "cuisineType": ["mexican", "american"],
+      "mealType": ["breakfast"],
+      "dietaryRestrictions": ["vegetarian"],
+      "cookingTime": "quick"
+    },
+    "nutrition": {
+      "calories": 420,
+      "protein": 22,
+      "carbs": 32,
+      "fat": 23,
+      "allergens": ["wheat", "eggs", "dairy"]
+    },
+    "createdAt": "2026-03-10T00:00:00Z",
+    "updatedAt": "2026-03-10T00:00:00Z"
+  },
+  {
+    "id": "pad-thai",
+    "title": "Pad Thai Autêntico",
+    "description": "O prato de macarrão de rua mais famoso da Tailândia com macarrão de arroz, camarão, amendoim e um equilíbrio perfeito de sabores doces, azedos e salgados.",
+    "images": ["/images/recipes/pad-thai-1.jpg", "/images/recipes/pad-thai-2.jpg"],
+    "prepTime": 20,
+    "cookTime": 15,
+    "totalTime": 35,
+    "servings": 4,
+    "difficulty": "medium",
+    "ingredients": [
+      { "id": "1", "name": "macarrão de arroz", "quantity": 300, "unit": "g", "notes": "seco" },
+      { "id": "2", "name": "camarão", "quantity": 300, "unit": "g", "notes": "descascado e limpo" },
+      { "id": "3", "name": "ovos", "quantity": 2, "unit": "large" },
+      { "id": "4", "name": "brotos de feijão", "quantity": 150, "unit": "g" },
+      { "id": "5", "name": "cebolinha verde", "quantity": 4, "unit": "stalks", "notes": "picada" },
+      { "id": "6", "name": "alho", "quantity": 3, "unit": "cloves", "notes": "picado" },
+      { "id": "7", "name": "pasta de tamarindo", "quantity": 3, "unit": "tbsp" },
+      { "id": "8", "name": "molho de peixe", "quantity": 3, "unit": "tbsp" },
+      { "id": "9", "name": "açúcar mascavo", "quantity": 2, "unit": "tbsp" },
+      { "id": "10", "name": "amendoim", "quantity": 50, "unit": "g", "notes": "triturado" },
+      { "id": "11", "name": "limão", "quantity": 2, "unit": "whole", "notes": "cortado em gomos" },
+      { "id": "12", "name": "óleo vegetal", "quantity": 3, "unit": "tbsp" }
+    ],
+    "instructions": [
+      { "step": 1, "text": "Deixe o macarrão de arroz de molho em água morna por 30 minutos e escorra.", "timer": 30 },
+      { "step": 2, "text": "Misture a pasta de tamarindo, molho de peixe e açúcar mascavo em uma tigela pequena para fazer o molho." },
+      { "step": 3, "text": "Aqueça 2 colheres de sopa de óleo em um wok em fogo alto. Adicione o camarão e cozinhe até ficar rosado, cerca de 3 minutos. Retire e reserve." },
+      { "step": 4, "text": "Adicione o óleo restante ao wok. Mexa os ovos, quebrando em pedaços pequenos." },
+      { "step": 5, "text": "Adicione o alho e refogue por 30 segundos até ficar aromático." },
+      { "step": 6, "text": "Adicione o macarrão escorrido e o molho. Mexa por 2-3 minutos até o macarrão ficar macio." },
+      { "step": 7, "text": "Retorne o camarão ao wok. Adicione os brotos de feijão e a cebolinha verde. Mexa por 1 minuto." },
+      { "step": 8, "text": "Sirva imediatamente com amendoim triturado e gomos de limão." }
+    ],
+    "categories": {
+      "cuisineType": ["thai", "asian"],
+      "mealType": ["dinner", "lunch"],
+      "dietaryRestrictions": [],
+      "cookingTime": "quick"
+    },
+    "nutrition": {
+      "calories": 485,
+      "protein": 26,
+      "carbs": 62,
+      "fat": 14,
+      "allergens": ["shellfish", "eggs", "nuts", "soy"]
+    },
+    "createdAt": "2026-03-10T00:00:00Z",
+    "updatedAt": "2026-03-10T00:00:00Z"
+  },
+  {
+    "id": "fluffy-pancakes",
+    "title": "Panquecas Fofas de Buttermilk",
+    "description": "Panquecas leves, fofas e perfeitamente douradas que são rápidas de fazer. O segredo está no buttermilk e em não mexer demais a massa.",
+    "images": ["/images/recipes/pancakes-1.jpg"],
+    "prepTime": 5,
+    "cookTime": 15,
+    "totalTime": 20,
+    "servings": 4,
+    "difficulty": "easy",
+    "ingredients": [
+      { "id": "1", "name": "farinha de trigo", "quantity": 200, "unit": "g" },
+      { "id": "2", "name": "açúcar", "quantity": 2, "unit": "tbsp" },
+      { "id": "3", "name": "fermento em pó", "quantity": 2, "unit": "tsp" },
+      { "id": "4", "name": "bicarbonato de sódio", "quantity": 0.5, "unit": "tsp" },
+      { "id": "5", "name": "sal", "quantity": 0.5, "unit": "tsp" },
+      { "id": "6", "name": "buttermilk", "quantity": 300, "unit": "ml" },
+      { "id": "7", "name": "ovo", "quantity": 1, "unit": "large" },
+      { "id": "8", "name": "manteiga derretida", "quantity": 3, "unit": "tbsp" },
+      { "id": "9", "name": "extrato de baunilha", "quantity": 1, "unit": "tsp" }
+    ],
+    "instructions": [
+      { "step": 1, "text": "Em uma tigela grande, misture a farinha, açúcar, fermento em pó, bicarbonato de sódio e sal." },
+      { "step": 2, "text": "Em outra tigela, bata o buttermilk, ovo, manteiga derretida e baunilha." },
+      { "step": 3, "text": "Despeje os ingredientes úmidos nos secos. Misture delicadamente apenas até incorporar. Grumos são normais!" },
+      { "step": 4, "text": "Aqueça uma chapa ou frigideira antiaderente em fogo médio. Unte levemente com manteiga." },
+      { "step": 5, "text": "Despeje 1/4 de xícara de massa para cada panqueca. Cozinhe até formar bolhas na superfície, cerca de 2-3 minutos.", "timer": 3 },
+      { "step": 6, "text": "Vire e cozinhe até dourar, mais 2 minutos." },
+      { "step": 7, "text": "Sirva quente com xarope de maple, manteiga e frutas vermelhas frescas." }
+    ],
+    "categories": {
+      "cuisineType": ["american"],
+      "mealType": ["breakfast"],
+      "dietaryRestrictions": ["vegetarian"],
+      "cookingTime": "quick"
+    },
+    "nutrition": {
+      "calories": 320,
+      "protein": 9,
+      "carbs": 48,
+      "fat": 11,
+      "allergens": ["wheat", "eggs", "dairy"]
+    },
+    "createdAt": "2026-03-10T00:00:00Z",
+    "updatedAt": "2026-03-10T00:00:00Z"
+  },
+  {
+    "id": "margherita-pizza",
+    "title": "Pizza Margherita",
+    "description": "Pizza italiana clássica com mussarela fresca, tomates e manjericão. Ingredientes simples que destacam qualidade e tradição.",
+    "images": ["/images/recipes/margherita-1.jpg", "/images/recipes/margherita-2.jpg"],
+    "prepTime": 90,
+    "cookTime": 12,
+    "totalTime": 102,
+    "servings": 2,
+    "difficulty": "medium",
+    "ingredients": [
+      { "id": "1", "name": "massa de pizza", "quantity": 400, "unit": "g", "notes": "comprada ou caseira" },
+      { "id": "2", "name": "tomates triturados", "quantity": 200, "unit": "g" },
+      { "id": "3", "name": "mussarela fresca", "quantity": 200, "unit": "g", "notes": "rasgada em pedaços" },
+      { "id": "4", "name": "folhas de manjericão fresco", "quantity": 15, "unit": "leaves" },
+      { "id": "5", "name": "azeite de oliva", "quantity": 3, "unit": "tbsp" },
+      { "id": "6", "name": "alho", "quantity": 2, "unit": "cloves", "notes": "picado" },
+      { "id": "7", "name": "sal", "quantity": 1, "unit": "tsp" },
+      { "id": "8", "name": "orégano seco", "quantity": 1, "unit": "tsp" }
+    ],
+    "instructions": [
+      { "step": 1, "text": "Se usar massa comprada, deixe atingir a temperatura ambiente por 30 minutos.", "timer": 30 },
+      { "step": 2, "text": "Preaqueça o forno na temperatura máxima (geralmente 260°C) com uma pedra de pizza ou assadeira dentro por 30 minutos." },
+      { "step": 3, "text": "Misture os tomates triturados com alho, orégano, sal e 1 colher de sopa de azeite." },
+      { "step": 4, "text": "Abra a massa em dois discos de 25 cm em uma superfície enfarinhada." },
+      { "step": 5, "text": "Transfira a massa para papel manteiga. Espalhe o molho de tomate, deixando 2,5 cm de borda." },
+      { "step": 6, "text": "Distribua os pedaços de mussarela uniformemente sobre o molho." },
+      { "step": 7, "text": "Regue com o azeite restante. Transfira para a pedra quente e asse por 10-12 minutos até a borda ficar dourada e o queijo borbulhante.", "timer": 12 },
+      { "step": 8, "text": "Retire do forno e cubra imediatamente com folhas de manjericão fresco. Corte e sirva." }
+    ],
+    "categories": {
+      "cuisineType": ["italian", "european"],
+      "mealType": ["dinner", "lunch"],
+      "dietaryRestrictions": ["vegetarian"],
+      "cookingTime": "medium"
+    },
+    "nutrition": {
+      "calories": 620,
+      "protein": 28,
+      "carbs": 72,
+      "fat": 24,
+      "allergens": ["wheat", "dairy"]
+    },
+    "createdAt": "2026-03-10T00:00:00Z",
+    "updatedAt": "2026-03-10T00:00:00Z"
+  },
+  {
+    "id": "vegetable-stir-fry",
+    "title": "Refogado de Legumes Coloridos",
+    "description": "Um refogado vegano vibrante e saudável repleto de vegetais crocantes em um molho saboroso. Rápido, fácil e personalizável.",
+    "images": ["/images/recipes/stir-fry-1.jpg"],
+    "prepTime": 15,
+    "cookTime": 10,
+    "totalTime": 25,
+    "servings": 4,
+    "difficulty": "easy",
+    "ingredients": [
+      { "id": "1", "name": "floretes de brócolis", "quantity": 200, "unit": "g" },
+      { "id": "2", "name": "pimentões", "quantity": 2, "unit": "medium", "notes": "fatiados, cores variadas" },
+      { "id": "3", "name": "cenouras", "quantity": 2, "unit": "medium", "notes": "em julienne" },
+      { "id": "4", "name": "ervilhas tortas", "quantity": 150, "unit": "g" },
+      { "id": "5", "name": "cogumelos", "quantity": 150, "unit": "g", "notes": "fatiados" },
+      { "id": "6", "name": "alho", "quantity": 4, "unit": "cloves", "notes": "picado" },
+      { "id": "7", "name": "gengibre", "quantity": 1, "unit": "tbsp", "notes": "ralado" },
+      { "id": "8", "name": "molho de soja", "quantity": 3, "unit": "tbsp" },
+      { "id": "9", "name": "óleo de gergelim", "quantity": 2, "unit": "tsp" },
+      { "id": "10", "name": "amido de milho", "quantity": 1, "unit": "tsp" },
+      { "id": "11", "name": "óleo vegetal", "quantity": 2, "unit": "tbsp" },
+      { "id": "12", "name": "sementes de gergelim", "quantity": 1, "unit": "tbsp", "notes": "para decorar" }
+    ],
+    "instructions": [
+      { "step": 1, "text": "Misture o molho de soja, óleo de gergelim, amido de milho e 2 colheres de sopa de água em uma tigela pequena para fazer o molho." },
+      { "step": 2, "text": "Aqueça o óleo vegetal em um wok grande ou frigideira em fogo alto." },
+      { "step": 3, "text": "Adicione o alho e o gengibre, refogue por 30 segundos até ficar aromático." },
+      { "step": 4, "text": "Adicione o brócolis e as cenouras. Refogue por 3 minutos." },
+      { "step": 5, "text": "Adicione os pimentões, ervilhas tortas e cogumelos. Continue refogando por 3-4 minutos até os vegetais ficarem crocantes e macios." },
+      { "step": 6, "text": "Despeje o molho e misture tudo por 1 minuto até os vegetais ficarem cobertos e o molho engrossar." },
+      { "step": 7, "text": "Decore com sementes de gergelim. Sirva imediatamente sobre arroz ou macarrão." }
+    ],
+    "categories": {
+      "cuisineType": ["asian", "chinese"],
+      "mealType": ["dinner", "lunch"],
+      "dietaryRestrictions": ["vegan", "vegetarian"],
+      "cookingTime": "quick"
+    },
+    "nutrition": {
+      "calories": 180,
+      "protein": 6,
+      "carbs": 22,
+      "fat": 8,
+      "allergens": ["soy"]
+    },
+    "createdAt": "2026-03-10T00:00:00Z",
+    "updatedAt": "2026-03-10T00:00:00Z"
+  },
+  {
+    "id": "chocolate-chip-cookies",
+    "title": "Cookies Perfeitos de Gotas de Chocolate",
+    "description": "Bordas crocantes com centro macio recheados de gotas de chocolate. O cookie clássico definitivo que nunca sai de moda.",
+    "images": ["/images/recipes/cookies-1.jpg"],
+    "prepTime": 15,
+    "cookTime": 12,
+    "totalTime": 27,
+    "servings": 24,
+    "difficulty": "easy",
+    "ingredients": [
+      { "id": "1", "name": "farinha de trigo", "quantity": 280, "unit": "g" },
+      { "id": "2", "name": "bicarbonato de sódio", "quantity": 1, "unit": "tsp" },
+      { "id": "3", "name": "sal", "quantity": 1, "unit": "tsp" },
+      { "id": "4", "name": "manteiga sem sal", "quantity": 225, "unit": "g", "notes": "amolecida" },
+      { "id": "5", "name": "açúcar mascavo", "quantity": 150, "unit": "g", "notes": "compactado" },
+      { "id": "6", "name": "açúcar refinado", "quantity": 100, "unit": "g" },
+      { "id": "7", "name": "ovos", "quantity": 2, "unit": "large" },
+      { "id": "8", "name": "extrato de baunilha", "quantity": 2, "unit": "tsp" },
+      { "id": "9", "name": "gotas de chocolate", "quantity": 340, "unit": "g" }
+    ],
+    "instructions": [
+      { "step": 1, "text": "Preaqueça o forno a 190°C. Forre as assadeiras com papel manteiga." },
+      { "step": 2, "text": "Misture a farinha, bicarbonato de sódio e sal em uma tigela." },
+      { "step": 3, "text": "Em uma tigela grande, bata a manteiga e os dois açúcares até ficar leve e cremoso, cerca de 3 minutos." },
+      { "step": 4, "text": "Adicione os ovos um de cada vez, depois adicione o extrato de baunilha." },
+      { "step": 5, "text": "Misture gradualmente a mistura de farinha até apenas incorporar." },
+      { "step": 6, "text": "Incorpore as gotas de chocolate." },
+      { "step": 7, "text": "Coloque colheradas arredondadas de massa nas assadeiras preparadas, deixando 5 cm de espaço entre elas." },
+      { "step": 8, "text": "Asse por 10-12 minutos até as bordas ficarem douradas mas o centro parecer levemente mal cozido.", "timer": 12 },
+      { "step": 9, "text": "Deixe esfriar na assadeira por 5 minutos antes de transferir para uma grade." }
+    ],
+    "categories": {
+      "cuisineType": ["american"],
+      "mealType": ["dessert", "snack"],
+      "dietaryRestrictions": ["vegetarian"],
+      "cookingTime": "quick"
+    },
+    "nutrition": {
+      "calories": 180,
+      "protein": 2,
+      "carbs": 24,
+      "fat": 9,
+      "allergens": ["wheat", "eggs", "dairy"]
+    },
+    "createdAt": "2026-03-10T00:00:00Z",
+    "updatedAt": "2026-03-10T00:00:00Z"
+  },
+  {
+    "id": "chicken-fajitas",
+    "title": "Fajitas de Frango Chiando",
+    "description": "Frango suculento marinado com pimentões coloridos e cebola servido com tortilhas quentes. Perfeito para um jantar divertido e interativo.",
+    "images": ["/images/recipes/fajitas-1.jpg", "/images/recipes/fajitas-2.jpg"],
+    "prepTime": 15,
+    "cookTime": 15,
+    "totalTime": 30,
+    "servings": 4,
+    "difficulty": "easy",
+    "ingredients": [
+      { "id": "1", "name": "peitos de frango", "quantity": 600, "unit": "g", "notes": "cortados em tiras" },
+      { "id": "2", "name": "pimentões", "quantity": 3, "unit": "large", "notes": "fatiados, cores variadas" },
+      { "id": "3", "name": "cebola", "quantity": 1, "unit": "large", "notes": "fatiada" },
+      { "id": "4", "name": "suco de limão", "quantity": 3, "unit": "tbsp" },
+      { "id": "5", "name": "azeite de oliva", "quantity": 3, "unit": "tbsp" },
+      { "id": "6", "name": "pimenta em pó", "quantity": 2, "unit": "tsp" },
+      { "id": "7", "name": "cominho", "quantity": 1, "unit": "tsp" },
+      { "id": "8", "name": "páprica", "quantity": 1, "unit": "tsp" },
+      { "id": "9", "name": "alho em pó", "quantity": 1, "unit": "tsp" },
+      { "id": "10", "name": "sal", "quantity": 1, "unit": "tsp" },
+      { "id": "11", "name": "tortilhas de trigo ou milho", "quantity": 8, "unit": "medium" }
+    ],
+    "instructions": [
+      { "step": 1, "text": "Em uma tigela, misture o suco de limão, 2 colheres de sopa de azeite, pimenta em pó, cominho, páprica, alho em pó e sal." },
+      { "step": 2, "text": "Adicione as tiras de frango e marine por 10 minutos.", "timer": 10 },
+      { "step": 3, "text": "Aqueça 1 colher de sopa de azeite em uma frigideira grande em fogo alto." },
+      { "step": 4, "text": "Adicione o frango e cozinhe até dourar e estar completamente cozido, cerca de 5-6 minutos. Retire e reserve." },
+      { "step": 5, "text": "Na mesma frigideira, adicione os pimentões e a cebola. Cozinhe por 4-5 minutos até ficarem levemente queimados mas ainda crocantes." },
+      { "step": 6, "text": "Retorne o frango à frigideira e misture com os vegetais por 1 minuto." },
+      { "step": 7, "text": "Aqueça as tortilhas e sirva as fajitas com acompanhamentos como creme de leite, guacamole e salsa." }
+    ],
+    "categories": {
+      "cuisineType": ["mexican"],
+      "mealType": ["dinner"],
+      "dietaryRestrictions": [],
+      "cookingTime": "quick"
+    },
+    "nutrition": {
+      "calories": 420,
+      "protein": 38,
+      "carbs": 35,
+      "fat": 14,
+      "allergens": ["wheat"]
+    },
+    "createdAt": "2026-03-10T00:00:00Z",
+    "updatedAt": "2026-03-10T00:00:00Z"
+  },
+  {
+    "id": "greek-salad",
+    "title": "Salada Grega Tradicional",
+    "description": "Salada mediterrânea fresca e vibrante com tomates, pepinos, azeitonas e queijo feta. Leve, saudável e repleta de sabor.",
+    "images": ["/images/recipes/greek-salad-1.jpg"],
+    "prepTime": 15,
+    "cookTime": 0,
+    "totalTime": 15,
+    "servings": 4,
+    "difficulty": "easy",
+    "ingredients": [
+      { "id": "1", "name": "tomates", "quantity": 4, "unit": "large", "notes": "cortados em gomos" },
+      { "id": "2", "name": "pepino", "quantity": 1, "unit": "large", "notes": "fatiado" },
+      { "id": "3", "name": "cebola roxa", "quantity": 1, "unit": "small", "notes": "fatiada finamente" },
+      { "id": "4", "name": "azeitonas Kalamata", "quantity": 100, "unit": "g" },
+      { "id": "5", "name": "queijo feta", "quantity": 200, "unit": "g", "notes": "em cubos" },
+      { "id": "6", "name": "azeite de oliva extra virgem", "quantity": 4, "unit": "tbsp" },
+      { "id": "7", "name": "vinagre de vinho tinto", "quantity": 2, "unit": "tbsp" },
+      { "id": "8", "name": "orégano seco", "quantity": 1, "unit": "tsp" },
+      { "id": "9", "name": "sal e pimenta", "quantity": 1, "unit": "pinch" }
+    ],
+    "instructions": [
+      { "step": 1, "text": "Em uma tigela grande, combine os tomates, pepino, cebola roxa e azeitonas." },
+      { "step": 2, "text": "Em uma tigela pequena, misture o azeite, vinagre de vinho tinto, orégano, sal e pimenta." },
+      { "step": 3, "text": "Despeje o molho sobre os vegetais e misture delicadamente." },
+      { "step": 4, "text": "Cubra com os cubos de queijo feta." },
+      { "step": 5, "text": "Deixe descansar por 5 minutos para os sabores se misturarem antes de servir." }
+    ],
+    "categories": {
+      "cuisineType": ["greek", "mediterranean", "european"],
+      "mealType": ["lunch", "dinner"],
+      "dietaryRestrictions": ["vegetarian"],
+      "cookingTime": "quick"
+    },
+    "nutrition": {
+      "calories": 280,
+      "protein": 8,
+      "carbs": 14,
+      "fat": 22,
+      "allergens": ["dairy"]
+    },
+    "createdAt": "2026-03-10T00:00:00Z",
+    "updatedAt": "2026-03-10T00:00:00Z"
+  },
+  {
+    "id": "beef-pho",
+    "title": "Pho Vietnamita de Carne",
+    "description": "Sopa aromática e profundamente saborosa de macarrão vietnamita com carne macia, ervas frescas e um caldo rico que cozinhou por horas.",
+    "images": ["/images/recipes/pho-1.jpg", "/images/recipes/pho-2.jpg"],
+    "prepTime": 30,
+    "cookTime": 180,
+    "totalTime": 210,
+    "servings": 6,
+    "difficulty": "hard",
+    "ingredients": [
+      { "id": "1", "name": "ossos de boi", "quantity": 1.5, "unit": "kg", "notes": "ossos de joelho e tutano" },
+      { "id": "2", "name": "peito bovino", "quantity": 500, "unit": "g" },
+      { "id": "3", "name": "cebolas", "quantity": 2, "unit": "large", "notes": "cortadas ao meio" },
+      { "id": "4", "name": "gengibre", "quantity": 100, "unit": "g", "notes": "fatiado" },
+      { "id": "5", "name": "anis estrelado", "quantity": 4, "unit": "whole" },
+      { "id": "6", "name": "canela em pau", "quantity": 1, "unit": "large" },
+      { "id": "7", "name": "sementes de coentro", "quantity": 1, "unit": "tbsp" },
+      { "id": "8", "name": "molho de peixe", "quantity": 80, "unit": "ml" },
+      { "id": "9", "name": "açúcar cristal", "quantity": 30, "unit": "g" },
+      { "id": "10", "name": "macarrão de arroz", "quantity": 400, "unit": "g", "notes": "banh pho" },
+      { "id": "11", "name": "contrafilé bovino", "quantity": 300, "unit": "g", "notes": "fatiado finamente para cobertura" },
+      { "id": "12", "name": "brotos de feijão", "quantity": 200, "unit": "g" },
+      { "id": "13", "name": "manjericão fresco", "quantity": 1, "unit": "bunch" },
+      { "id": "14", "name": "coentro", "quantity": 1, "unit": "bunch" },
+      { "id": "15", "name": "limão", "quantity": 2, "unit": "whole", "notes": "cortado em gomos" },
+      { "id": "16", "name": "molho hoisin", "quantity": 4, "unit": "tbsp", "notes": "para servir" },
+      { "id": "17", "name": "sriracha", "quantity": 4, "unit": "tbsp", "notes": "para servir" }
+    ],
+    "instructions": [
+      { "step": 1, "text": "Ferva os ossos de boi em água fervente por 5 minutos. Escorra e enxágue para remover impurezas." },
+      { "step": 2, "text": "Queime as cebolas e o gengibre diretamente sobre uma chama de gás ou sob o grill até ficarem carbonizados." },
+      { "step": 3, "text": "Toste o anis estrelado, canela e sementes de coentro em uma panela seca por 2 minutos até ficar aromático." },
+      { "step": 4, "text": "Coloque os ossos, peito bovino, cebolas queimadas, gengibre e especiarias tostadas em uma panela grande. Cubra com 4 litros de água.", "timer": 10 },
+      { "step": 5, "text": "Leve para ferver, depois reduza o fogo e deixe ferver em fogo baixo por 3 horas, removendo a espuma regularmente.", "timer": 180 },
+      { "step": 6, "text": "Retire o peito bovino após 90 minutos e deixe esfriar. Fatie finamente quando estiver pronto para servir." },
+      { "step": 7, "text": "Coe o caldo por uma peneira fina. Tempere com molho de peixe e açúcar cristal a gosto." },
+      { "step": 8, "text": "Cozinhe o macarrão de arroz conforme as instruções da embalagem. Distribua entre as tigelas." },
+      { "step": 9, "text": "Cubra o macarrão com fatias de peito bovino e fatias de contrafilé cru." },
+      { "step": 10, "text": "Despeje o caldo quente sobre as tigelas (o calor cozinhará a carne crua)." },
+      { "step": 11, "text": "Sirva com brotos de feijão, ervas frescas, gomos de limão, molho hoisin e sriracha à parte." }
+    ],
+    "categories": {
+      "cuisineType": ["vietnamese", "asian"],
+      "mealType": ["dinner", "lunch"],
+      "dietaryRestrictions": [],
+      "cookingTime": "long"
+    },
+    "nutrition": {
+      "calories": 520,
+      "protein": 42,
+      "carbs": 58,
+      "fat": 12,
+      "allergens": ["soy"]
+    },
+    "createdAt": "2026-03-10T00:00:00Z",
+    "updatedAt": "2026-03-10T00:00:00Z"
+  }
+]
